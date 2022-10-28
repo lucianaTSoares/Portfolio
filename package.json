@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev && next lint",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,14 +11,21 @@
   "dependencies": {
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/node": "18.11.5",
     "@types/react": "18.0.22",
     "@types/react-dom": "18.0.7",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "8.26.0",
     "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.10",
     "typescript": "4.8.4"
   }
 }
