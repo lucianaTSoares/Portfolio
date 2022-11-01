@@ -1,7 +1,16 @@
+import SocialItem from './SocialItem'
+import { FooterStyle } from './styles'
+
 export default function Footer() {
 	return (
-		<footer>
-			<p>Footer</p>
-		</footer>
+		<FooterStyle>
+			<div>
+				<p>Veja minhas rede sociais!</p>
+				<ul>
+					<SocialItem path=''>
+				</ul>
+			</div>
+			<span>2022 - Feito com amor &hearts;</span>
+		</FooterStyle>
 	)
 }
