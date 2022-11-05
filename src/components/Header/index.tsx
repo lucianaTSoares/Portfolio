@@ -1,27 +1,23 @@
-import Item from './Item'
+import { Icon } from '@iconify/react'
+import ItemList from '../ItemList'
 import { Container } from './styles'
 
 export default function Header() {
-	const items = [
-		'Início',
-		'Sobre mim',
-		'Trajetória',
-		'Projetos',
-		'Skills',
-		'Depoimentos'
-	]
+	const items = ['Sobre mim', 'Trajetória', 'Projetos', 'Skills', 'Depoimentos']
+
 	return (
 		<Container>
 			<div className="container">
 				<nav>
-					<a href="#">
+					<p>
 						Lu <span>&#10100;dev&#95;&#10101;</span>
-					</a>
+					</p>
 					<ul>
 						{items.map((item, key) => (
-							<Item key={key}>{item}</Item>
+							<ItemList key={key}>{item}</ItemList>
 						))}
 					</ul>
+					<Icon icon="charm:sun" />
 				</nav>
 			</div>
 		</Container>

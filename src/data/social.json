@@ -1,0 +1,20 @@
+[
+	{
+		"name": "LinkedIn",
+		"iconName": "eva:linkedin-outline",
+		"path": "https://linkedin.com/in/lucianatsoares",
+		"color": "#1380ed"
+	},
+	{
+		"name": "GitHub",
+		"iconName": "eva:github-outline",
+		"path": "https://github.com/lucianaTSoares",
+		"color": "#83888f"
+	},
+	{
+		"name": "E-mail",
+		"iconName": "eva:email-outline",
+		"path": "mailto:lucianat.s@hotmail.com",
+		"color": "#2cd1c9"
+	}
+]
