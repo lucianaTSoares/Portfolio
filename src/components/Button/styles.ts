@@ -5,17 +5,12 @@ interface PropTypes {
 }
 
 export const ButtonStyle = styled.a`
-	width: 10.9rem;
 	border-radius: 10px;
-	padding: 15px;
-	font-weight: 600;
+	padding: 15px 25px;
+	font-weight: 700;
 	display: flex;
-  justify-content: center;
-  align-items: center;
-
-	&:hover {
-		cursor: pointer;
-	}
+	justify-content: center;
+	align-items: center;
 
 	${({ variant }: PropTypes) =>
 		variant === 'primary' &&
