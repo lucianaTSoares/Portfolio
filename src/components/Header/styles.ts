@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.header`
+export const Header = styled.header`
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -15,24 +15,25 @@ export const Container = styled.header`
 		align-items: center;
 		height: 7.1875rem;
 
-		> p {
-			font-family: 'Roboto Mono', monospace;
-			font-size: 20px;
-
-			span {
-				color: ${(props) => props.theme.colors.tertiary};
-				font-weight: 700;
-			}
-		}
-
 		svg {
 			font-size: 25px;
 		}
-	}
 
-	ul {
-		display: flex;
-		gap: 1.5625rem;
-		font-weight: 600;
+		div:last-child {
+			@media screen and (max-width: 765px) {
+				display: none;
+			}
+		}
+	}
+`
+
+export const Logo = styled.p`
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+
+	span {
+		display: block;
+		color: ${(props) => props.theme.colors.tertiary};
+		font-weight: 700;
 	}
 `
