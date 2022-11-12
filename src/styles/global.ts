@@ -27,10 +27,31 @@ a {
   color: ${(props) => props.theme.colors.text};
   cursor: pointer;
 }
-
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  @media screen and (min-width: 0px) {
+      max-width: 425px;
+      margin: 0 auto;
+    } 
+
+  @media screen and (min-width: 576px) {
+      max-width: 576px;
+      margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+      max-width: 768px;
+      margin: 0 auto;
+  }
+
+  @media screen and (min-width: 992px) {
+      max-width: 992px;
+      margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
 }
 
 .dots-background {

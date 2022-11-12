@@ -5,7 +5,7 @@ import Initial from '../components/Initial'
 
 const Home: NextPage = () => {
 	return (
-		<div>
+		<div className=".container">
 			<Header />
 			<main>
 				<Initial />
