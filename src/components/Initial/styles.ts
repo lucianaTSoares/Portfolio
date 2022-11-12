@@ -10,7 +10,6 @@ export const Container = styled.section`
 	h1 {
 		font-size: 2rem;
 		line-height: 2.25rem;
-		width: max-content;
 
 		> span {
 			display: block;
@@ -23,7 +22,7 @@ export const Container = styled.section`
 
 	p {
 		font-size: 1.25rem;
-		width: max-content;
+		line-height: 1.5rem;
 		background-color: ${(props) => props.theme.colors.background};
 
 		span {
@@ -34,7 +33,7 @@ export const Container = styled.section`
 
 	ul {
 		justify-content: flex-start;
-		margin-top: 0
+		margin-top: 0;
 	}
 `
 

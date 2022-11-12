@@ -8,7 +8,7 @@ import List from '../../styles/icon-list-style'
 export default function Initial() {
 	return (
 		<Container className="container">
-			<Infos className="dots-background">
+			<Infos>
 				<h1>
 					Luciana Soares <span>Desenvolvedora Web.</span>
 				</h1>
