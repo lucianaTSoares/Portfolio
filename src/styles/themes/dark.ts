@@ -6,6 +6,7 @@ const dark = {
 		tertiary: '#707BFB',
 		background: '#1F0322',
 		text: '#F3EFF5'
+		//#160318
 	}
 }
 

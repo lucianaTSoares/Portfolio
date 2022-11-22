@@ -8,11 +8,14 @@ export const MenuToggle = styled.div<{ open: boolean }>`
 		display: block;
 		width: 33px;
 		height: 4px;
-		margin-bottom: ${({ open }) => (!open ? '7px' : undefined)};
 		background: ${(props) => props.theme.colors.text};
 		border-radius: 3px;
 		z-index: 1;
 		transition: all 0.5s ease;
+
+		&:not(:last-child) {
+			margin-bottom: ${({ open }) => (!open ? '7px' : undefined)};
+		}
 
 		&:first-child {
 			transform: ${({ open }) =>

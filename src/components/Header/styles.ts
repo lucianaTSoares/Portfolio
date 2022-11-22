@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-export const Header = styled.header`
+export const Header = styled.header<{ hasBorder: boolean }>`
 	position: fixed;
 	top: 0;
 	width: 100%;
-	//border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+	box-shadow: ${({ hasBorder }) =>
+		hasBorder ? `0px 0px 17px 0px #474852` : undefined};
 	font-size: 18px;
 	z-index: 9999;
 	background-color: ${(props) => props.theme.colors.background};
@@ -20,7 +21,7 @@ export const Header = styled.header`
 		}
 
 		div:last-child {
-			@media screen and (max-width: 765px) {
+			@media screen and (max-width: 769px) {
 				display: none;
 			}
 		}
@@ -30,6 +31,7 @@ export const Header = styled.header`
 export const Logo = styled.p`
 	font-family: 'Roboto Mono', monospace;
 	font-size: 20px;
+	line-height: 23px;
 
 	span {
 		display: block;
