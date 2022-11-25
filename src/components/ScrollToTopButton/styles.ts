@@ -12,21 +12,23 @@ export const ButtonScrollStyle = styled.div<{ visible: boolean }>`
 	background-color: ${(props) => props.theme.colors.background};
 	border: 2px solid #928b95;
 	display: ${({ visible }) => (visible ? 'flex' : 'none')};
-	transition: 0.2s;
+	transition: 500ms;
 	overflow: hidden;
+	user-select: none;
+	cursor: pointer;
 
 	span {
 		max-width: 0;
 		opacity: 0;
 		white-space: nowrap;
-		transition: all 0.2s;
+		transition: 500ms;
 	}
 
 	&:hover {
 		span {
 			max-width: 200px;
-			margin-left: 8px;
 			opacity: 1;
+			margin: 0 5px;
 		}
 	}
 

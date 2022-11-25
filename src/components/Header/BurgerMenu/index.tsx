@@ -12,7 +12,7 @@ export default function BurgerMenu() {
 				<span></span>
 				<span></span>
 			</S.MenuToggle>
-			<Nav open={isOpen} />
+			<Nav open={isOpen} onClose={() => setIsOpen(!isOpen)} />
 		</>
 	)
 }

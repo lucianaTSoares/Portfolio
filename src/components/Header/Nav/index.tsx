@@ -5,18 +5,24 @@ import { Icon } from '@iconify/react'
 
 interface PropsType {
 	open: boolean
+	onClose: () => void
 }
 
-export default function Nav({ open }: PropsType) {
+export default function Nav({ open, onClose }: PropsType) {
 	return (
 		<S.Container open={open}>
-			<S.StyledUl>
+			<ul>
 				{navbarList.map((item, key) => (
-					<ItemList key={key} path={item.path} target="_self">
+					<ItemList
+						key={key}
+						path={item.path}
+						target="_self"
+						handleClick={() => onClose()}
+					>
 						{item.label}
 					</ItemList>
 				))}
-			</S.StyledUl>
+			</ul>
 			<Icon icon="charm:sun" />
 		</S.Container>
 	)

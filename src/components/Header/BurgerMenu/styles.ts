@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const MenuToggle = styled.div<{ open: boolean }>`
 	z-index: 1;
@@ -13,25 +13,28 @@ export const MenuToggle = styled.div<{ open: boolean }>`
 		z-index: 1;
 		transition: all 0.5s ease;
 
-		&:not(:last-child) {
-			margin-bottom: ${({ open }) => (!open ? '7px' : undefined)};
-		}
+		${({ open }) => css`
+			&:not(:last-child) {
+				margin-bottom: ${!open ? '7px' : undefined};
+			}
 
-		&:first-child {
-			transform: ${({ open }) =>
-				open ? 'rotate(45deg) translate(0, 6px)' : 'rotate(0) translate(0)'};
-		}
+			&:first-child {
+				transform: ${open
+					? 'rotate(45deg) translate(0, 6px)'
+					: 'rotate(0) translate(0)'};
+			}
 
-		&:nth-child(2) {
-			opacity: ${({ open }) => (!open ? '1' : '0')};
-			transform: ${({ open }) =>
-				open ? 'rotate(0deg) scale(0.2, 0.2)' : 'scale(1)'};
-		}
+			&:nth-child(2) {
+				opacity: ${!open ? '1' : '0'};
+				transform: ${open ? 'rotate(0deg) scale(0.2, 0.2)' : 'scale(1)'};
+			}
 
-		&:last-child {
-			transform: ${({ open }) =>
-				open ? 'rotate(-45deg) translate(0, -6px)' : 'rotate(0) translate(0)'};
-		}
+			&:last-child {
+				transform: ${open
+					? 'rotate(-45deg) translate(0, -6px)'
+					: 'rotate(0) translate(0)'};
+			}
+		`}
 	}
 
 	@media screen and (min-width: 768px) {

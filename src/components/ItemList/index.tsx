@@ -1,3 +1,4 @@
+import { MouseEventHandler } from 'react'
 import { ItemStyle } from './styles'
 
 interface PropTypes {
@@ -6,6 +7,7 @@ interface PropTypes {
 	iconColor?: string
 	title?: string
 	target?: string
+	handleClick?: MouseEventHandler<HTMLAnchorElement>
 }
 
 export default function ItemList({
@@ -13,11 +15,12 @@ export default function ItemList({
 	children,
 	iconColor,
 	title,
-	target = '_blank'
+	target = '_blank',
+	handleClick
 }: PropTypes) {
 	return (
 		<ItemStyle iconColor={iconColor} title={title}>
-			<a href={path} target={target} rel="noreferrer">
+			<a href={path} target={target} rel="noreferrer" onClick={handleClick}>
 				{children}
 			</a>
 		</ItemStyle>

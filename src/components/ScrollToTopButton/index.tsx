@@ -7,23 +7,17 @@ export default function ScrollToTopButton() {
 
 	const toggleVisible = () => {
 		const scrolled = document.documentElement.scrollTop
-
-		if (scrolled > 20) {
-			setVisible(true)
-		} else if (scrolled <= 20) {
-			setVisible(false)
-		}
-	}
-
-	const scrollToTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' })
+		scrolled > 20 ? setVisible(true) : setVisible(false)
 	}
 
 	typeof window !== 'undefined' &&
 		window.addEventListener('scroll', toggleVisible)
 
 	return (
-		<ButtonScrollStyle onClick={() => scrollToTop()} visible={visible}>
+		<ButtonScrollStyle
+			onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+			visible={visible}
+		>
 			<Icon icon="mdi:arrow-up-thick" />
 			<span>Voltar ao topo</span>
 		</ButtonScrollStyle>

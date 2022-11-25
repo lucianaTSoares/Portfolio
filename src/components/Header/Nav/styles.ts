@@ -2,39 +2,35 @@ import styled from 'styled-components'
 
 export const Container = styled.div<{ open: boolean }>`
 	display: flex;
-	gap: 1.5625rem;
+	gap: 2.1rem;
 	align-items: center;
+	justify-content: center;
+
+	ul {
+		display: flex;
+		gap: 2.1rem;
+		font-weight: 600;
+	}
 
 	@media screen and (max-width: 768px) {
-		flex-direction: column;
-		background-color: #000;
-		transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
 		position: fixed;
 		top: 0;
-		right: 0;
-		height: 100vh;
+		right: ${({ open }) => (!open ? '-50rem' : '0')};
+		transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+		flex-direction: column;
+		background-color: #000;
 		width: 100vw;
-		padding-top: 4rem;
-		transition: ${({ open }) =>
-			open
-				? 'all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)'
-				: 'all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)'};
+		height: 100vh;
+
+		ul {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	@media screen and (min-width: 768px) {
 		svg {
 			display: none;
 		}
-	}
-`
-
-export const StyledUl = styled.ul`
-	display: flex;
-	gap: 1.5625rem;
-	font-weight: 600;
-
-	@media screen and (max-width: 768px) {
-		flex-direction: column;
-		align-items: center;
 	}
 `
