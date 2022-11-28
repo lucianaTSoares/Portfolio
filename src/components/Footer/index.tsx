@@ -1,8 +1,8 @@
 import { Icon } from '@iconify/react'
 import ItemList from '../ItemList'
 import { FooterStyle } from './styles'
-import social from '../../data/social.json'
 import List from '../../styles/icon-list-style'
+import socialList from '../../data/socialList'
 
 export default function Footer() {
 	return (
@@ -10,14 +10,14 @@ export default function Footer() {
 			<div>
 				<p>Veja minhas rede sociais e entre em contato comigo!</p>
 				<List>
-					{social.map((item, key) => (
+					{socialList.map((item, key) => (
 						<ItemList
 							key={key}
 							path={item.path}
 							iconColor={item.color}
 							title={item.name}
 						>
-							<Icon icon={item.iconName} />
+							{item.icon}
 						</ItemList>
 					))}
 				</List>

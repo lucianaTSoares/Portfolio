@@ -8,8 +8,11 @@ export default createGlobalStyle`
   box-sizing: border-box;
 }
 
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   line-height: 1;
   outline: none;
   font-family: 'Montserrat', sans-serif;
@@ -70,5 +73,24 @@ a {
   background-image: radial-gradient(#ffffff87 1px, transparent 0);
 	background-size: 40px 40px;
 	background-position: -19px -19px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #270b2a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active {
+  background: #ab8ea89c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 `

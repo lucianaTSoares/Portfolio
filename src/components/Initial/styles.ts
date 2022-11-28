@@ -41,12 +41,15 @@ export const Infos = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 1.25rem;
-	padding: 4rem;
 	width: 100%;
-
+	
 	> div {
 		display: flex;
 		gap: 1.25rem;
 		margin-top: 1.875rem;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding: 4rem;
 	}
 `

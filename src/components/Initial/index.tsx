@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react'
 import Button from '../Button'
 import ItemList from '../ItemList'
 import { Container, Infos } from './styles'
-import social from '../../data/social.json'
+import socialList from '../../data/socialList'
 import List from '../../styles/icon-list-style'
 
 export default function Initial() {
@@ -17,14 +17,14 @@ export default function Initial() {
 					as pessoas com a tecnologia.
 				</p>
 				<List>
-					{social.map((item, key) => (
+					{socialList.map((item, key) => (
 						<ItemList
 							key={key}
 							path={item.path}
 							iconColor={item.color}
 							title={item.name}
 						>
-							<Icon icon={item.iconName} />
+							{item.icon}
 						</ItemList>
 					))}
 				</List>
