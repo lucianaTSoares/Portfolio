@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Initial from '../components/Initial'
 import ScrollToTopButton from '../components/ScrollToTopButton'
+import Skills from '../components/Skills'
 
 const Home: NextPage = () => {
 	return (
@@ -10,7 +11,8 @@ const Home: NextPage = () => {
 			<Header />
 			<main>
 				<Initial />
-				<ScrollToTopButton/>
+				<Skills />
+				<ScrollToTopButton />
 			</main>
 			<Footer />
 		</div>
