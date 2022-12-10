@@ -1,0 +1,16 @@
+[
+	{
+		"company": "6place",
+		"job": "Desenvolvedora Web Full Stack Júnior",
+		"date": "Mai. 2022 - o momento",
+		"description": "Contribuindo no desenvolvimento de funcionalidades, manutenção e sugestão de melhorias de experiência do usuário na plataforma de marketplace visando solução de abastecimento para redes de franquias de Food Service, atingindo cerca de 30 franquias e mais de 5 mil franqueados.",
+		"skills": "React, Next.js com TypeScript, Styled Components, Material UI / Ant Design, Redux, SPA e PWA, API REST, Node.js, Express, Sequelize ORM, PostgreSQL e Swagger."
+	},
+	{
+		"company": "Generation Brasil",
+		"job": "Estudante de Desenvolvimento Web Java",
+		"date": "Jan. 2022 - Abr. 2022",
+		"description": "Bootcamp intensivo que proporciona experiências mais próximas do mercado profissional como Desenvolvedora Web, trabalhado com planejamento e desenvolvimento de aplicações.",
+		"skills": "Java, Spring Boot, HTML5, CSS3, JavaScript, TypeScript, Angular 13, Bootstrap, JUnit, Git."
+	}
+]

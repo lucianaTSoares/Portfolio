@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Experiences from '../components/Experiences'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Initial from '../components/Initial'
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
 			<Header />
 			<main>
 				<Initial />
+				<Experiences />
 				<Skills />
 				<ScrollToTopButton />
 			</main>
