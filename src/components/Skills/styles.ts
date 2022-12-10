@@ -27,7 +27,6 @@ export const ListSkillCard = styled.ul`
 	justify-content: center;
 	gap: 13px;
 	margin-bottom: 5rem;
-	width: 100%;
 
 	li {
 		display: flex;
@@ -37,8 +36,8 @@ export const ListSkillCard = styled.ul`
 		align-items: center;
 		border: 2px solid #ffffff29;
 		border-radius: 5px;
-		width: 12rem;
-		height: 12rem;
+		width: 11rem;
+		height: 11rem;
 		gap: 15px;
 		transition: 600ms;
 

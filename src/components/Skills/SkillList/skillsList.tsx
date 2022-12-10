@@ -21,7 +21,7 @@ import {
 
 import { DiSass } from 'react-icons/di'
 
-const iconSize = 70
+const iconSize = 65
 
 export const mainSkills = [
 	{
@@ -101,6 +101,6 @@ export const otherSkills = [
 	},
 	{
 		name: 'Redux',
-		icon: <SiRedux size={65} />
+		icon: <SiRedux size={60} />
 	}
 ]

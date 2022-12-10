@@ -5,9 +5,9 @@ const dark = {
 		secondary: '#5F0F40',
 		tertiary: '#6A4FE2',
 		icon: '#CB6D86',
-		background: '#160318',
+		background: '#010001',
 		text: '#F3EFF5'
-		//#160318
+		//#010001
 	}
 }
 

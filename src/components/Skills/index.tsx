@@ -18,7 +18,7 @@ export default function Skills() {
 					))}
 				</ListSkillCard>
 
-				<h3>Outras</h3>
+				{/* <h3>Outras</h3>
 				<ListSkillCard>
 					{otherSkills.map((skill) => (
 						<li key={skill.name} title={skill.name}>
@@ -26,7 +26,7 @@ export default function Skills() {
 							<p>{skill.name}</p>
 						</li>
 					))}
-				</ListSkillCard>
+				</ListSkillCard> */}
 			</Container>
 		</div>
 	)

@@ -16,7 +16,7 @@ body {
   line-height: 1;
   outline: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.text};
 }
