@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-	margin-top: 2rem;
+export const Container = styled.section`
 	min-height: 100vh;
+	padding-top: 10rem;
 
 	h2,
 	h3 {
@@ -13,12 +13,6 @@ export const Container = styled.div`
 		text-align: center;
 		font-weight: 500;
 	}
-
-	@media screen and (min-width: 576px) {
-		h2 {
-			padding: 4rem;
-		}
-	}
 `
 
 export const ListSkillCard = styled.ul`
@@ -27,44 +21,54 @@ export const ListSkillCard = styled.ul`
 	justify-content: center;
 	gap: 13px;
 	margin-bottom: 5rem;
+	text-align: center;
+`
 
-	li {
-		display: flex;
-		flex: 0 0 calc(100% / 6);
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		border: 2px solid #ffffff29;
-		border-radius: 5px;
-		width: 11rem;
-		height: 11rem;
-		gap: 15px;
-		transition: 600ms;
+export const ItemListSkill = styled.li<{ color: string }>`
+	display: flex;
+	flex: 0 0 calc(100% / 6);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.03);
+	border: 1px solid transparent;
+	border-radius: 5px;
+	width: 11rem;
+	height: 11rem;
+	gap: 15px;
+	transition: 400ms linear;
 
-		&:hover {
-			border-color: #f3eff5db;
+	p {
+		transition: 400ms linear;
+	}
 
-			svg {
-				color: ${({ theme }) => theme.colors.icon};
-				transition: 600ms;
-			}
+	svg {
+		color: ${({ color }) => color && `rgb(${color})`};
+	}
+
+	&:hover {
+		border-color: ${({ color }) => color && `rgb(${color})`};
+		background-color: ${({ color }) => color && `rgba(${color}, 0.05)`};
+
+		p {
+			color: ${({ color }) => color && `rgb(${color})`};
 		}
+	}
 
-		@media screen and (max-width: 1200px) {
-			flex: 0 0 auto;
-		}
+	@media screen and (max-width: 1200px) {
+		flex: 0 0 auto;
+	}
 
-		@media screen and (max-width: 576px) {
-			flex-direction: row;
-			height: 6rem;
-			width: 100%;
-			justify-content: start;
-			padding-left: 1.3rem;
+	@media screen and (max-width: 693px) {
+		flex-direction: row;
+		height: 6rem;
+		width: 100%;
+		justify-content: start;
+		padding-left: 1.3rem;
 
-			svg {
-				width: 40px;
-				height: 40px;
-			}
+		svg {
+			width: 40px;
+			height: 40px;
 		}
 	}
 `

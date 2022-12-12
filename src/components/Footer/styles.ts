@@ -1,16 +1,12 @@
 import styled from 'styled-components'
 
 export const FooterStyle = styled.footer`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	border-top: 1px solid #ffffff14;
 	padding: 20px 0 0;
 	text-align: center;
-	gap: 20px;
+	padding: 2rem 0;
 
-	span {
-		background-color: ${(props) => props.theme.colors.secondary};
-		width: 100%;
-		padding: 20px 0;
+	div {
+		margin: 2rem 0 1.5rem;
 	}
 `

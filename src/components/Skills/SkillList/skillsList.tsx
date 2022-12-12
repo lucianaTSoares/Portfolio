@@ -26,81 +26,100 @@ const iconSize = 65
 export const mainSkills = [
 	{
 		name: 'HTML5',
-		icon: <SiHtml5 size={iconSize} />
+		icon: <SiHtml5 size={iconSize} />,
+		color: '242, 85, 33'
 	},
 	{
 		name: 'CSS3',
-		icon: <SiCss3 size={iconSize} />
+		icon: <SiCss3 size={iconSize} />,
+		color: '36, 73, 216'
 	},
 	{
 		name: 'JavaScript',
-		icon: <SiJavascript size={iconSize} />
+		icon: <SiJavascript size={iconSize} />,
+		color: '234, 212, 28'
 	},
 	{
 		name: 'TypeScript',
-		icon: <SiTypescript size={iconSize} />
+		icon: <SiTypescript size={iconSize} />,
+		color: '0, 116, 194'
 	},
 	{
 		name: 'React',
-		icon: <SiReact size={iconSize} />
+		icon: <SiReact size={iconSize} />,
+		color: '97, 219, 251'
 	},
 	{
-		name: 'NextJS',
-		icon: <SiNextdotjs size={iconSize} />
+		name: 'Next.js',
+		icon: <SiNextdotjs size={iconSize} />,
+		color: '89, 204, 198'
 	},
 	{
-		name: 'NodeJS',
-		icon: <SiNodedotjs size={iconSize} />
+		name: 'Node.js',
+		icon: <SiNodedotjs size={iconSize} />,
+		color: '137, 187, 60'
 	},
 	{
 		name: 'Styled Components',
-		icon: <SiStyledcomponents size={iconSize} />
+		icon: <SiStyledcomponents size={iconSize} />,
+		color: '223, 143, 119'
 	},
 	{
 		name: 'PostgreSQL',
-		icon: <SiPostgresql size={iconSize} />
+		icon: <SiPostgresql size={iconSize} />,
+		color: '48, 98, 138'
 	},
 	{
 		name: 'Git',
-		icon: <SiGit size={iconSize} />
+		icon: <SiGit size={iconSize} />,
+		color: '228, 76, 48'
 	}
 ]
 
 export const otherSkills = [
 	{
 		name: 'Java',
-		icon: <SiJava size={iconSize} />
+		icon: <SiJava size={iconSize} />,
+		color: '223, 43, 45'
 	},
 	{
 		name: 'Spring Boot',
-		icon: <SiSpring size={iconSize} />
-	},
-	{
-		name: 'JUnit',
-		icon: <SiJunit5 size={iconSize} />
+		icon: <SiSpring size={iconSize} />,
+		color: '105, 170, 65'
 	},
 	{
 		name: 'Angular',
-		icon: <SiAngular size={iconSize} />
+		icon: <SiAngular size={iconSize} />,
+		color: '210, 0, 47'
 	},
 	{
 		name: 'Sass',
-		icon: <DiSass size={iconSize} />
+		icon: <DiSass size={iconSize} />,
+		color: '194, 97, 145'
 	},
 	{
 		name: 'Bootstrap',
-		icon: <SiBootstrap size={iconSize} />
+		icon: <SiBootstrap size={iconSize} />,
+		color: '112, 19, 231'
 	},
 	{
 		name: 'Tailwind',
-		icon: <SiTailwindcss size={iconSize} />
+		icon: <SiTailwindcss size={iconSize} />,
+		color: '22, 190, 203'
 	},
 	{
 		name: 'Sequelize ORM',
-		icon: <SiSequelize size={iconSize} />
+		icon: <SiSequelize size={iconSize} />,
+		color: '2, 166, 227'
 	},
 	{
 		name: 'Redux',
-		icon: <SiRedux size={60} />
+		icon: <SiRedux size={60} />,
+		color: '118, 74, 188'
+	},
+	{
+		name: 'JUnit',
+		icon: <SiJunit5 size={iconSize} />,
+		color: '220, 82, 74'
 	}
 ]

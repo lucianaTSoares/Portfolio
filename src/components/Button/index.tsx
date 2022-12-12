@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { ButtonStyle } from './styles'
 
@@ -15,8 +16,10 @@ export default function Button({
 	variant = 'primary'
 }: PropTypes) {
 	return (
-		<ButtonStyle variant={variant} href={href} target={target}>
-			{children}
-		</ButtonStyle>
+		<Link href={href} passHref>
+			<ButtonStyle variant={variant} href={href} target={target}>
+				{children}
+			</ButtonStyle>
+		</Link>
 	)
 }

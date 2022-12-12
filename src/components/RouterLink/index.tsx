@@ -7,7 +7,7 @@ interface PropTypes {
 
 export default function RouterLink({ children, path }: PropTypes) {
 	return (
-		<Link href={path}>
+		<Link href={path} passHref>
 			<a>{children}</a>
 		</Link>
 	)

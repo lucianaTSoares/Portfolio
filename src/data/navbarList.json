@@ -1,6 +1,6 @@
 [
 	{
-		"label": "Sobre mim",
+		"label": "Sobre",
 		"path": "#"
 	},
 	{
@@ -9,7 +9,7 @@
 	},
 	{
 		"label": "Projetos",
-		"path": "#"
+		"path": "#projects"
 	},
 	{
 		"label": "Skills",

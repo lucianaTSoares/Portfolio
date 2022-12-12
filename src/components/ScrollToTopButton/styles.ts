@@ -12,7 +12,7 @@ export const ButtonScrollStyle = styled.div<{ visible: boolean }>`
 	background-color: ${(props) => props.theme.colors.background};
 	border: 2px solid #928b95;
 	display: ${({ visible }) => (visible ? 'flex' : 'none')};
-	transition: 500ms;
+	transition: 400ms;
 	overflow: hidden;
 	user-select: none;
 	cursor: pointer;
@@ -21,7 +21,7 @@ export const ButtonScrollStyle = styled.div<{ visible: boolean }>`
 		max-width: 0;
 		opacity: 0;
 		white-space: nowrap;
-		transition: 500ms;
+		transition: 400ms;
 	}
 
 	&:hover {
