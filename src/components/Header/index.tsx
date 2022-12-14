@@ -6,7 +6,8 @@ import * as S from './styles'
 export default function Header() {
 	const [border, setBorder] = useState(false)
 	const [isProjectPage, setIsProjectPage] = useState(false)
-	const urlPage = 'http://localhost:3000/projects'
+	const [projectUrlPage, setProjectUrlPage] = useState('')
+	const windowCondition = typeof window !== 'undefined'
 	let actualUrlPage = ''
 
 	const toggleBorder = () => {
@@ -19,19 +20,23 @@ export default function Header() {
 		}
 	}
 
-	if (typeof window !== 'undefined') {
+	if (windowCondition) {
 		window.addEventListener('scroll', toggleBorder)
-		actualUrlPage = window.location.href
+		actualUrlPage = `${window.location.href}`
 	}
 
 	useEffect(() => {
-		if (typeof window !== 'undefined' && actualUrlPage === urlPage) {
+		windowCondition && setProjectUrlPage(`${window.location.href}projects`)
+	}, [])
+
+	useEffect(() => {
+		if (windowCondition && projectUrlPage === actualUrlPage) {
 			setIsProjectPage(true)
 		} else {
 			setIsProjectPage(false)
 		}
 	}, [actualUrlPage])
-	
+
 	return (
 		<S.Header hasBorder={border}>
 			<div className="container">
