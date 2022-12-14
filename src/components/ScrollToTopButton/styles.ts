@@ -24,11 +24,13 @@ export const ButtonScrollStyle = styled.div<{ visible: boolean }>`
 		transition: 400ms;
 	}
 
-	&:hover {
-		span {
-			max-width: 200px;
-			opacity: 1;
-			margin: 0 5px;
+	@media screen and (min-width: 769px) {
+		&:hover {
+			span {
+				max-width: 200px;
+				opacity: 1;
+				margin: 0 5px;
+			}
 		}
 	}
 

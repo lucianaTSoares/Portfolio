@@ -8,7 +8,16 @@ interface PropTypes {
 export default function RouterLink({ children, path }: PropTypes) {
 	return (
 		<Link href={path} passHref>
-			<a>{children}</a>
+			<a
+				style={{
+					fontWeight: 'bold',
+					display: 'flex',
+					alignItems: 'center',
+					width: 'fit-content'
+				}}
+			>
+				{children}
+			</a>
 		</Link>
 	)
 }

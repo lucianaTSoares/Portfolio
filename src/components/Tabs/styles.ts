@@ -43,6 +43,7 @@ export const TabBodyStyle = styled.div`
 			font-weight: 600;
 			color: #7c7a87;
 			font-size: 1rem;
+			text-align: right;
 		}
 	}
 
@@ -60,6 +61,10 @@ export const TabBodyStyle = styled.div`
 
 		div {
 			flex-direction: column;
+			
+			p {
+				text-align: left;
+			}
 		}
 	}
 `

@@ -36,4 +36,10 @@ export const TabListItem = styled.li<{ isActive: boolean }>`
 			height: 3px;
 		}
 	}
+
+	@media screen and (max-width: 431px) {
+		:first-child h3 {
+			padding: 34px 29px;
+		}
+	}
 `
