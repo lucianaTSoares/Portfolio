@@ -12,10 +12,10 @@ export const Container = styled.div<{ open: boolean }>`
 		font-weight: 600;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 905px) {
 		position: fixed;
 		top: 0;
-		right: ${({ open }) => (!open ? '-50rem' : '0')};
+		right: ${({ open }) => (!open ? '-60rem' : '0')};
 		transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 		flex-direction: column;
 		background-color: #000;
@@ -28,7 +28,7 @@ export const Container = styled.div<{ open: boolean }>`
 		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 905px) {
 		svg {
 			display: none;
 		}

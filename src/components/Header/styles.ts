@@ -20,7 +20,7 @@ export const Header = styled.header<{ hasBorder: boolean }>`
 		}
 
 		div:last-child {
-			@media screen and (max-width: 769px) {
+			@media screen and (max-width: 905px) {
 				display: none;
 			}
 		}

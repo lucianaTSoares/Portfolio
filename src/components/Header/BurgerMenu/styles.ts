@@ -37,7 +37,7 @@ export const MenuToggle = styled.div<{ open: boolean }>`
 		`}
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 905px) {
 		display: none;
 	}
 `
