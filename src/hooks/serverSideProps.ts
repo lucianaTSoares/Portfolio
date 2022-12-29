@@ -1,10 +1,6 @@
 export default async function getServerSideProps() {
 	const user = 'lucianaTSoares'
-	const data = await fetch(`https://api.github.com/users/${user}/repos`, {
-		headers: {
-			authorization: 'token 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'
-		}
-	})
+	const data = await fetch(`https://api.github.com/users/${user}/repos`)
 		.then((res) => res.json())
 		.then((res) => {
 			return res
