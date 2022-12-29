@@ -1,7 +1,8 @@
+import Footer from '@components/Footer'
+import Header from '@components/Header'
+import ScrollToTopButton from '@components/ScrollToTopButton'
 import React, { ReactElement } from 'react'
-import Footer from '../Footer'
-import Header from '../Header'
-import ScrollToTopButton from '../ScrollToTopButton'
+
 
 type Props = {
 	children: ReactElement

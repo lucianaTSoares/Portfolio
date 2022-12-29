@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.section`
+export const SkillsContainer = styled.section`
 	min-height: 100vh;
 	padding-top: 10rem;
 
@@ -20,24 +20,29 @@ export const ListSkillCard = styled.ul`
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 13px;
-	margin-bottom: 5rem;
 	text-align: center;
 `
 
 export const ItemListSkill = styled.li<{ color: string }>`
-	display: flex;
-	flex: 0 0 calc(100% / 7);
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background-color: rgba(255, 255, 255, 0.03);
-	border: 1px solid transparent;
-	border-radius: 5px;
 	width: 9.2rem;
 	height: 9.4rem;
-	gap: 15px;
-	transition: 400ms linear;
-	padding: 0 5px;
+	display: flex;
+	flex: 0 0 calc(100% / 7);
+
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid transparent;
+		border-radius: 5px;
+		transition: all 400ms linear;
+		height: 100%;
+		width: 100%;
+		padding: 0 5px;
+		gap: 15px;
+	}
 
 	p {
 		font-size: 1rem;
@@ -50,8 +55,10 @@ export const ItemListSkill = styled.li<{ color: string }>`
 	}
 
 	&:hover {
-		border-color: ${({ color }) => color && `rgb(${color})`};
-		background-color: ${({ color }) => color && `rgba(${color}, 0.05)`};
+		div {
+			border-color: ${({ color }) => color && `rgb(${color})`};
+			background-color: ${({ color }) => color && `rgba(${color}, 0.05)`};
+		}
 
 		p {
 			color: ${({ color }) => color && `rgb(${color})`};

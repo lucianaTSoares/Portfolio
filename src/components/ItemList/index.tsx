@@ -19,7 +19,7 @@ export default function ItemList({
 	handleClick
 }: PropTypes) {
 	return (
-		<ItemStyle iconColor={iconColor} title={title}>
+		<ItemStyle iconColor={iconColor} aria-label={title} title={title}>
 			<a href={path} target={target} rel="noreferrer" onClick={handleClick}>
 				{children}
 			</a>

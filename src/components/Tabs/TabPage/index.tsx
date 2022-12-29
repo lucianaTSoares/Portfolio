@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
 import { TabListItem } from './styles'
 
 interface PropTypes {

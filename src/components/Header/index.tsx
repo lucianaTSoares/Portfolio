@@ -1,7 +1,8 @@
 import { Icon } from '@iconify/react'
 import { useEffect, useState } from 'react'
 import BurgerMenu from './BurgerMenu'
-import * as S from './styles'
+
+import { HeaderStyle, Logo } from './styles'
 
 export default function Header() {
 	const [border, setBorder] = useState(false)
@@ -13,9 +14,9 @@ export default function Header() {
 	const toggleBorder = () => {
 		const scrolled = document.documentElement.scrollTop
 
-		if (scrolled > 20) {
+		if (scrolled > 10) {
 			setBorder(true)
-		} else if (scrolled <= 20) {
+		} else {
 			setBorder(false)
 		}
 	}
@@ -38,12 +39,12 @@ export default function Header() {
 	}, [actualUrlPage])
 
 	return (
-		<S.Header hasBorder={border}>
+		<HeaderStyle hasBorder={border}>
 			<div className="container">
 				<nav>
-					<S.Logo>
+					<Logo>
 						Lu <span>&#10100;dev&#95;&#10101;</span>
-					</S.Logo>
+					</Logo>
 					{!isProjectPage && (
 						<>
 							<BurgerMenu />
@@ -54,6 +55,6 @@ export default function Header() {
 					)}
 				</nav>
 			</div>
-		</S.Header>
+		</HeaderStyle>
 	)
 }

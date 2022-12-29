@@ -1,11 +1,12 @@
-import { NextPage } from 'next'
-import getServerSideProps from '../hooks/serverSideProps'
-import Head from 'next/head'
-import ProjectList from '../components/ProjectList'
-import RouterLink from '../components/RouterLink'
-import GetFilteredProjects from '../hooks/getFilteredProjects'
-import { TArrayProject } from '../types/project'
+import ProjectList from '@components/ProjectList'
+import RouterLink from '@components/RouterLink'
+import getFilteredProjects from '@hooks/getFilteredProjects'
+import getServerSideProps from '@hooks/serverSideProps'
 import { Icon } from '@iconify/react'
+import { NextPage } from 'next'
+import Head from 'next/head'
+import { TArrayProject } from 'types/project'
+
 export { getServerSideProps }
 
 const projectsName = [
@@ -24,13 +25,17 @@ const Projects: NextPage<TArrayProject> = ({ data }: TArrayProject) => {
 			<Head>
 				<title>LuDev - Projetos</title>
 			</Head>
-			<div className="container" style={{ padding: '8rem 0 5rem' }}>
+			<div
+				className="container"
+				data-aos="fade-up"
+				style={{ padding: '8rem 0 5rem', minHeight: '100vh' }}
+			>
 				<RouterLink path="/">
 					<Icon icon="material-symbols:keyboard-double-arrow-left-rounded" />{' '}
 					Voltar
 				</RouterLink>
 
-				<ProjectList list={GetFilteredProjects(data, projectsName)} />
+				<ProjectList list={getFilteredProjects(data, projectsName)} />
 			</div>
 		</>
 	)

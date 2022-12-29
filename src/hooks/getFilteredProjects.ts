@@ -1,6 +1,6 @@
-import { TProject } from '../types/project'
+import { TProject } from 'types/project'
 
-const GetFilteredProjects = (
+const getFilteredProjects = (
 	dataList: TProject[],
 	arrayWithProjectsNames: string[]
 ) => {
@@ -9,4 +9,4 @@ const GetFilteredProjects = (
 	)
 }
 
-export default GetFilteredProjects
+export default getFilteredProjects

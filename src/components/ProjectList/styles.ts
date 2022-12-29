@@ -14,21 +14,29 @@ export const ProjectListCard = styled.ul`
 `
 
 export const ProjectListItem = styled.li`
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 28px;
 	background-color: rgba(255, 255, 255, 0.03);
-	padding: 2.3rem;
-	border-radius: 5px;
-	flex: 1 0 calc(100% / 4);
 	width: calc(100% / 3);
-	border: 1px solid transparent;
-	transition: 400ms linear;
+	flex: 1 0 calc(100% / 4);
+	display: flex;
+
+	> div {
+		display: flex;
+		padding: 2.3rem;
+		border: 1px solid transparent;
+		gap: 28px;
+		flex-direction: column;
+		justify-content: space-between;
+		border-radius: 5px;
+		transition: 400ms linear;
+		width: 100%;
+		height: 100%;
+	}
 
 	&:hover {
-		border-color: ${({ theme }) => theme.colors.tertiary};
-		background-color: rgba(145, 56, 255, 0.05);
+		> div {
+			border-color: ${({ theme }) => theme.colors.tertiary};
+			background-color: rgba(145, 56, 255, 0.05);
+		}
 	}
 
 	div:first-child {
@@ -43,12 +51,14 @@ export const ProjectListItem = styled.li`
 
 	div:last-child {
 		a {
-			margin-top: 1rem;
+			margin-top: 1.5rem;
+			display: flex;
+			align-items: center;
+			gap: 8px;
 		}
 
 		a,
 		p {
-			display: block;
 			color: #92909a;
 			font-weight: 500;
 			width: fit-content;

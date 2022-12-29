@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div<{ open: boolean }>`
+export const NavContainer = styled.div<{ open: boolean }>`
 	display: flex;
 	gap: 2.1rem;
 	align-items: center;

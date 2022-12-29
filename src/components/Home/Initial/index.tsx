@@ -1,11 +1,11 @@
-import ItemList from '../../ItemList'
-import { Container, Infos } from './styles'
-import socialList from '../../../data/socialList'
-import List from '../../../styles/icon-list-style'
+import ItemList from "@components/ItemList";
+import socialList from "@data/socialList";
+import List from "@styles/icon-list-style"
+import { InitialContainer, Infos } from "./styles";
 
 export default function Initial() {
 	return (
-		<Container className="container">
+		<InitialContainer className="container" data-aos="fade-up">
 			<Infos>
 				<h1>
 					Luciana Soares <span>Desenvolvedora Web.</span>
@@ -27,6 +27,6 @@ export default function Initial() {
 					))}
 				</List>
 			</Infos>
-		</Container>
+		</InitialContainer>
 	)
 }

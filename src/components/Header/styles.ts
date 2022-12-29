@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Header = styled.header<{ hasBorder: boolean }>`
+export const HeaderStyle = styled.header<{ hasBorder: boolean }>`
 	position: fixed;
 	top: 0;
 	width: 100%;

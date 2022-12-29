@@ -1,13 +1,12 @@
-import { Icon } from '@iconify/react'
-import ItemList from '../ItemList'
+import ItemList from '@components/ItemList'
+import socialList from 'data/socialList'
+import { ListSkillCard } from '../Home/Skills/styles'
 import { FooterStyle } from './styles'
-import List from '../../styles/icon-list-style'
-import socialList from '../../data/socialList'
 
 export default function Footer() {
 	return (
 		<FooterStyle>
-			<List>
+			<ListSkillCard>
 				{socialList.map((item, key) => (
 					<ItemList
 						key={key}
@@ -18,7 +17,7 @@ export default function Footer() {
 						{item.icon}
 					</ItemList>
 				))}
-			</List>
+			</ListSkillCard>
 			<div>&copy; Todos os direitos reservados.</div>
 		</FooterStyle>
 	)

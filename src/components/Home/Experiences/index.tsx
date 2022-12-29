@@ -1,25 +1,27 @@
-import Tabs from '../../Tabs'
-import { Container } from './styles'
-import experianceData from '../../../data/experiencesList.json'
+import Tabs from '@components/Tabs'
+import { ExperianceContainer } from './styles'
+import experianceList from 'data/experiencesList.json'
 
 export default function Experiences() {
 	return (
-		<Container className="container" id="experiences">
-			<h2>Experiência</h2>
-			<Tabs>
-				{experianceData.map((experience) => (
-					<div key={experience.company} data-title={experience.company}>
-						<div>
-							<h4>{experience.job}</h4>
-							<p>{experience.date}</p>
+		<ExperianceContainer className="container" id="experiences">
+			<div data-aos="fade-up">
+				<h2>Experiência</h2>
+				<Tabs>
+					{experianceList.map((experience) => (
+						<div key={experience.company} data-title={experience.company}>
+							<div>
+								<h4>{experience.job}</h4>
+								<p>{experience.date}</p>
+							</div>
+							<p>{experience.description}</p>
+							<p>
+								<span>Tecnologias trabalhadas:</span> {experience.skills}
+							</p>
 						</div>
-						<p>{experience.description}</p>
-						<p>
-							<span>Tecnologias trabalhadas:</span> {experience.skills}
-						</p>
-					</div>
-				))}
-			</Tabs>
-		</Container>
+					))}
+				</Tabs>
+			</div>
+		</ExperianceContainer>
 	)
 }

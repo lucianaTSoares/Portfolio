@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const Container = styled.section`
-	height: 100vh;
+export const InitialContainer = styled.section`
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;

@@ -1,7 +1,8 @@
-import ItemList from '../../ItemList'
-import navbarList from '../../../data/navbarList.json'
-import * as S from './styles'
 import { Icon } from '@iconify/react'
+
+import { NavContainer } from './styles'
+import navbarList from 'data/navbarList.json'
+import ItemList from '@components/ItemList'
 
 interface PropsType {
 	open: boolean
@@ -10,7 +11,7 @@ interface PropsType {
 
 export default function Nav({ open, onClose }: PropsType) {
 	return (
-		<S.Container open={open}>
+		<NavContainer open={open}>
 			<ul>
 				{navbarList.map((item, key) => (
 					<ItemList
@@ -24,6 +25,6 @@ export default function Nav({ open, onClose }: PropsType) {
 				))}
 			</ul>
 			<Icon icon="charm:sun" />
-		</S.Container>
+		</NavContainer>
 	)
 }
