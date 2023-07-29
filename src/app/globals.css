@@ -3,25 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-default: 250, 250, 250;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-default: 18, 18, 18;
   }
 }
 
+html {
+  font-family: var(--font-montserrat);
+  scroll-behavior: smooth;
+}
+
+#header-logo {
+  font-family: var(--font-roboto-mono);
+}
+
+#logo-span {
+  font-family: var(--font-dm-sans);
+  background-image: linear-gradient(
+    90deg,
+    rgb(147, 90, 255) 35%,
+    rgb(255, 34, 101) 100%
+  );
+  -webkit-text-stroke-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(var(--background-default));
+}
+
+@media screen and (min-width: 1280px) {
+  .global-container {
+    margin: auto 9vw;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .global-container {
+    padding: auto 12vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .global-container {
+    padding: auto 16vw;
+  }
+}
+
+.global-container {
+  margin: auto 7vw;
+}
+
+@layer components {
+  .burger-menu-span {
+    transform: rotate(45deg) translate(0, 6px);
+  }
+  .burger-menu-span--negative {
+    transform: rotate(-45deg) translate(0, -6px);
+  }
 }
