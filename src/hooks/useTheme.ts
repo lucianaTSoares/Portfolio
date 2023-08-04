@@ -3,24 +3,20 @@
 import { useState, useEffect } from 'react';
 
 export function useTheme() {
-  const [theme, setTheme] = useState('dark');
+  const [darkTheme, setIsDarkTheme] = useState(true);
 
   useEffect(() => {
-    setTheme(
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-        ? 'dark'
-        : 'light'
-    );
+    setIsDarkTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
   }, []);
 
   useEffect(() => {
     const rootElement = document.documentElement;
-    if (theme === 'dark') {
+    if (darkTheme) {
       rootElement.classList.add('dark');
     } else {
       rootElement.classList.remove('dark');
     }
-  }, [theme]);
+  }, [darkTheme]);
 
-  return { theme, setTheme };
+  return { darkTheme, setIsDarkTheme };
 }

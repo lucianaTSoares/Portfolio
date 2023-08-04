@@ -4,7 +4,7 @@ import { Presentation } from '../components/Sections/Presentation';
 
 export default function Home() {
   return (
-    <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-y-scroll'>
+    <main className=''>
       <Presentation />
       <About />
       <About />

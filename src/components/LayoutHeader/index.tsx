@@ -22,8 +22,8 @@ export function LayoutHeader() {
         {currentPage !== '/projects' && (
           <Header.Items menuItems={navItems} iconColor={itemsColor} />
         )}
-        <Header.BurgerMenu />
         <Header.ToggleTheme />
+        {currentPage !== '/projects' && <Header.BurgerMenu />}
       </Header.Nav>
     </Header.Root>
   );

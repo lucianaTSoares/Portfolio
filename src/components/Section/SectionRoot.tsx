@@ -4,16 +4,21 @@ interface SectionRootProps {
   children: ReactNode;
   centralized?: boolean;
   id?: string;
-  test?: string;
+  paddingTop?: boolean;
 }
 
-export function SectionRoot({ children, centralized, id }: SectionRootProps) {
+export function SectionRoot({
+  children,
+  centralized,
+  id,
+  paddingTop = false,
+}: SectionRootProps) {
   return (
     <section
       id={id}
-      className={`global-container flex h-screen items-center lg:snap-start lg:snap-always ${
+      className={`global-container flex min-h-screen items-center ${
         centralized ? 'justify-center' : 'block'
-      }`}
+      } ${paddingTop ? '!pt-[50rem]' : 'pt-0'}`}
     >
       {children}
     </section>

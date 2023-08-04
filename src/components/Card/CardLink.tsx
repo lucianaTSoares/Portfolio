@@ -1,9 +1,10 @@
 import { AnchorHTMLAttributes, ElementType } from 'react';
+import { IconType } from 'react-icons/lib';
 
 interface CardLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   text: string;
   href: string;
-  icon?: ElementType;
+  icon?: IconType;
 }
 
 export function CardLink({ text, href, icon: Icon, ...rest }: CardLinkProps) {
@@ -15,7 +16,7 @@ export function CardLink({ text, href, icon: Icon, ...rest }: CardLinkProps) {
       href={href}
       {...rest}
     >
-      {Icon && <Icon />}
+      {Icon && <Icon size={20} />}
       <span>{text}</span>
     </a>
   );
