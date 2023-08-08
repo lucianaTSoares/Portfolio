@@ -1,13 +1,11 @@
-import { HTMLAttributes } from 'react';
-
-interface CardContentProps extends HTMLAttributes<HTMLParagraphElement> {
-  content: string;
+interface CardContentProps extends React.HTMLAttributes<HTMLParagraphElement> {
+  children: React.ReactNode;
 }
 
-export function CardContent({ content, ...rest }: CardContentProps) {
+export function CardContent({ children, ...rest }: CardContentProps) {
   return (
     <p className='mb-5' {...rest}>
-      {content}
+      {children}
     </p>
   );
 }

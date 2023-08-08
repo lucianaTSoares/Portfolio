@@ -1,6 +1,4 @@
-import { HTMLAttributes } from 'react';
-
-interface CardTagsProps extends HTMLAttributes<HTMLUListElement> {
+interface CardTagsProps extends React.HTMLAttributes<HTMLUListElement> {
   tags: string[];
 }
 

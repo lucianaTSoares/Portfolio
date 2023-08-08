@@ -1,6 +1,6 @@
 import { FloatButton } from '../components/FloatButton';
-import { About } from '../components/Sections/About';
 import { Presentation } from '../components/Sections/Presentation';
+import { About } from '../components/Sections/About';
 
 export default function Home() {
   return (

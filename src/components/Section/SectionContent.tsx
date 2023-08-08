@@ -1,7 +1,5 @@
-import { ReactNode } from 'react';
-
 interface SectionContentProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export function SectionContent({ children }: SectionContentProps) {

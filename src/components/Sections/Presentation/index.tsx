@@ -4,7 +4,7 @@ import { TypewriteCustom } from '../../TypewriteCustom';
 
 export function Presentation() {
   return (
-    <Section.Root centralized>
+    <Section.Root id='presentation' centralized>
       <Section.Content>
         <h1 className='text-center font-bold !leading-loose md:!leading-tight '>
           Luciana Soares

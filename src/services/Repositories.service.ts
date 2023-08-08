@@ -25,7 +25,7 @@ async function getRepositories({
 
   const res = await fetch(`https://api.github.com/user/repos?${params}`, {
     headers: {
-      Authorization: `Bearer ${process.env.GITHUB_ACESS_TOKEN}`,
+      Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
     },
   });
   const data: TRepository[] = await res.json();

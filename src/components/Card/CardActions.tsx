@@ -1,7 +1,5 @@
-import { ReactNode } from 'react';
-
 interface CardActionProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export function CardActions({ children }: CardActionProps) {

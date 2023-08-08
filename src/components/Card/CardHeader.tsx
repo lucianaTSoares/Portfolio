@@ -1,7 +1,5 @@
-import { HTMLAttributes, ReactNode } from 'react';
-
-interface CardHeaderProps extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode;
+interface CardHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode;
 }
 
 export function CardHeader({ children, ...rest }: CardHeaderProps) {

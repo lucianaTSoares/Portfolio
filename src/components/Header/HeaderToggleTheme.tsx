@@ -1,6 +1,7 @@
-import { TbMoonOff, TbMoon } from 'react-icons/tb';
-import { useTheme } from '@/hooks/useTheme';
 import { useScroll } from '@/hooks/useScroll';
+import { useTheme } from '@/hooks/useTheme';
+import { TbMoon, TbMoonOff } from 'react-icons/tb';
+import { twMerge } from 'tailwind-merge';
 
 interface HeaderToggleThemeProps {
   darkIconsSize?: number;
@@ -16,9 +17,10 @@ export function HeaderToggleTheme({
 
   return (
     <button
-      className={`bg-zinc-200 hover:bg-zinc-300 dark:bg-zinc-800 hover:dark:bg-zinc-700
-      ${pageWasScrolled ? 'bg-opacity-30 hover:bg-opacity-60' : ''}
-      rounded-full p-2 transition`}
+      className={twMerge(
+        'rounded-full bg-zinc-200 p-2 transition hover:bg-zinc-300 dark:bg-zinc-800 hover:dark:bg-zinc-700',
+        pageWasScrolled && 'bg-opacity-30 hover:bg-opacity-60'
+      )}
       onClick={() => setIsDarkTheme((prev) => !prev)}
     >
       {darkTheme ? (
@@ -26,7 +28,7 @@ export function HeaderToggleTheme({
       ) : (
         <TbMoon
           size={lightIconsSize}
-          className={`${pageWasScrolled ? 'text-light' : ''}`}
+          className={twMerge(pageWasScrolled && 'text-light')}
         />
       )}
     </button>

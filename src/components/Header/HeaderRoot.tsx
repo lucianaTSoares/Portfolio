@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
 import { useScroll } from '@/hooks/useScroll';
+import { twMerge } from 'tailwind-merge';
 
 interface HeaderRootProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export function HeaderRoot({ children }: HeaderRootProps) {
@@ -10,11 +10,11 @@ export function HeaderRoot({ children }: HeaderRootProps) {
 
   return (
     <header
-      className={`fixed z-50 h-24 w-screen ${
-        pageWasScrolled
-          ? 'bg-primary !shadow-header-light dark:!shadow-header-dark'
-          : 'shadow-none'
-      }  flex items-center bg-light transition-all duration-200 ease-linear dark:bg-dark`}
+      className={twMerge(
+        'fixed z-50 flex h-24 w-screen items-center bg-light shadow-none transition-all duration-200 ease-linear dark:bg-dark',
+        pageWasScrolled &&
+          'bg-primary !shadow-header-light dark:!shadow-header-dark'
+      )}
     >
       {children}
     </header>

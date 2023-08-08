@@ -2,6 +2,7 @@
 
 import { useScroll } from '@/hooks/useScroll';
 import { TiArrowUpThick } from 'react-icons/ti';
+import { twMerge } from 'tailwind-merge';
 
 export function FloatButton() {
   const { pageWasScrolled } = useScroll(700);
@@ -9,9 +10,10 @@ export function FloatButton() {
   return (
     <button
       id='floatButton'
-      className={`group fixed bottom-8 right-8 ${
-        pageWasScrolled ? 'flex' : 'hidden'
-      } select-none items-center overflow-hidden rounded-md border-2 p-1 font-bold`}
+      className={twMerge(
+        'group fixed bottom-8 right-8 hidden select-none items-center overflow-hidden rounded-md border-2 p-1 font-bold',
+        pageWasScrolled && 'flex'
+      )}
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <TiArrowUpThick size={27} />

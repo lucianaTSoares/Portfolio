@@ -1,9 +1,9 @@
 'use client';
 
 import { useScroll } from '@/hooks/useScroll';
+import { usePathname } from 'next/navigation';
 import { Header } from '../Header';
 import { navItems } from '../Header/data/navItems';
-import { usePathname } from 'next/navigation';
 
 export function LayoutHeader() {
   const currentPage = usePathname();

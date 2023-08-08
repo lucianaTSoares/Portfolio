@@ -1,19 +1,17 @@
-import { AnchorHTMLAttributes, ElementType } from 'react';
 import { IconType } from 'react-icons/lib';
 
-interface CardLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface CardLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   text: string;
-  href: string;
   icon?: IconType;
 }
 
-export function CardLink({ text, href, icon: Icon, ...rest }: CardLinkProps) {
+export function CardLink({ text, icon: Icon, ...rest }: CardLinkProps) {
   return (
     <a
       className='flex w-fit flex-row items-center gap-2'
       target='_blank'
       rel='noreferrer'
-      href={href}
+      href={rest.href}
       {...rest}
     >
       {Icon && <Icon size={20} />}

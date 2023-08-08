@@ -1,24 +1,24 @@
-import { ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
 
-interface SectionRootProps {
-  children: ReactNode;
+interface SectionRootProps extends React.HTMLAttributes<HTMLElement> {
+  children: React.ReactNode;
   centralized?: boolean;
-  id?: string;
-  paddingTop?: boolean;
 }
 
 export function SectionRoot({
   children,
-  centralized,
-  id,
-  paddingTop = false,
+  centralized = false,
+  ...rest
 }: SectionRootProps) {
   return (
     <section
-      id={id}
-      className={`global-container flex min-h-screen items-center ${
-        centralized ? 'justify-center' : 'block'
-      } ${paddingTop ? '!pt-[50rem]' : 'pt-0'}`}
+      {...rest}
+      id={rest.id}
+      className={twMerge(
+        'global-container flex min-h-screen items-center ',
+        centralized && 'justify-center',
+        rest.className
+      )}
     >
       {children}
     </section>
