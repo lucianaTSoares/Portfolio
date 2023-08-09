@@ -1,18 +1,18 @@
 export const navItems = [
   {
     label: 'Sobre',
-    path: '#about',
+    path: '#aboutSection',
   },
   {
     label: 'Projetos',
-    path: '#projects',
+    path: '#projectsSection',
   },
   {
     label: 'Skills',
-    path: '#skills',
+    path: '#skillsSection',
   },
   {
     label: 'Depoimentos',
-    path: '#recommendations',
+    path: '#recommendationsSection',
   },
 ];

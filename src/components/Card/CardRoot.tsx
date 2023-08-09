@@ -12,7 +12,7 @@ export function CardRoot({ children, animateOnHover, ...rest }: CardRootProps) {
       className={twMerge(
         'flex h-full flex-col justify-between rounded-md border border-solid border-transparent bg-card-light p-8 shadow-card dark:bg-card-dark',
         animateOnHover &&
-          'transition duration-400 ease-linear hover:border-primary hover:bg-translucent dark:hover:bg-translucent'
+          'transition duration-400 ease-linear hover:border-indigo-500 hover:bg-translucent dark:hover:bg-translucent'
       )}
     >
       {children}

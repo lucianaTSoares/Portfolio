@@ -5,7 +5,10 @@ export function HeaderBurgerMenu() {
   const { isOpen, toggle } = useBurgerMenuContext();
 
   return (
-    <div className='z-10 block select-none sm:hidden' onClick={toggle}>
+    <div
+      className='z-10 block cursor-pointer select-none sm:hidden'
+      onClick={toggle}
+    >
       <span
         className={twMerge(
           'z-10 block h-1 w-8 rounded-sm bg-text-light transition-all duration-500 dark:bg-text-dark',

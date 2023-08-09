@@ -2,9 +2,9 @@ import { ArrowDown } from '../../ArrowDown';
 import { Section } from '../../Section';
 import { TypewriteCustom } from '../../TypewriteCustom';
 
-export function Presentation() {
+export function PresentationSection() {
   return (
-    <Section.Root id='presentation' centralized>
+    <Section.Root id='presentationSection' centralized>
       <Section.Content>
         <h1 className='text-center font-bold !leading-loose md:!leading-tight '>
           Luciana Soares

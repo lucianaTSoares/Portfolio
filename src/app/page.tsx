@@ -1,15 +1,14 @@
 import { FloatButton } from '../components/FloatButton';
-import { Presentation } from '../components/Sections/Presentation';
-import { About } from '../components/Sections/About';
+import { AboutSection } from '../components/Sections/About';
+import { PresentationSection } from '../components/Sections/Presentation';
+import { ProjectsSection } from '../components/Sections/Projects';
 
 export default function Home() {
   return (
-    <main className=''>
-      <Presentation />
-      <About />
-      <About />
-      <About />
-      <About />
+    <main>
+      <PresentationSection />
+      <ProjectsSection />
+      <AboutSection />
       <FloatButton />
     </main>
   );
