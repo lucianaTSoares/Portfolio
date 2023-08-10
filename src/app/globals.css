@@ -37,6 +37,10 @@ body {
   background-color: rgb(var(--background-default));
 }
 
+.global-container {
+  margin: auto 7vw;
+}
+
 @media screen and (min-width: 1280px) {
   .global-container {
     margin: auto 9vw;
@@ -44,18 +48,14 @@ body {
 }
 @media screen and (min-width: 1366px) {
   .global-container {
-    padding: auto 12vw;
+    margin: auto 12vw;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .global-container {
-    padding: auto 16vw;
+    margin: auto 16vw;
   }
-}
-
-.global-container {
-  margin: auto 7vw;
 }
 
 @layer components {

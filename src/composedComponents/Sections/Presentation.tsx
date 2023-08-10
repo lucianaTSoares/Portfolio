@@ -1,6 +1,6 @@
-import { ArrowDown } from '../../ArrowDown';
-import { Section } from '../../Section';
-import { TypewriteCustom } from '../../TypewriteCustom';
+import { TypewriteCustom } from '../TypewriteCustom';
+import { ArrowDown } from '../../components/ArrowDown';
+import { Section } from '../../components/Section';
 
 export function PresentationSection() {
   return (

@@ -11,9 +11,8 @@ export function HeaderRoot({ children }: HeaderRootProps) {
   return (
     <header
       className={twMerge(
-        'fixed z-50 flex h-24 w-screen items-center bg-light shadow-none transition-all duration-200 ease-linear dark:bg-dark',
-        pageWasScrolled &&
-          'bg-primary !shadow-header-light dark:!shadow-header-dark'
+        'fixed z-50 flex h-24 w-screen items-center bg-light shadow-none transition-all duration-300 ease-linear dark:bg-dark',
+        pageWasScrolled && '!shadow-header-light dark:shadow-header-dark'
       )}
     >
       {children}

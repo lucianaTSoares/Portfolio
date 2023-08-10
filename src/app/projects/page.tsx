@@ -1,5 +1,5 @@
-import { GroupProjectsCards } from '../../components/GroupProjectsCards';
 import { Section } from '../../components/Section';
+import { GroupProjectsCards } from '../../composedComponents/GroupProjectsCards';
 
 const repositoriesToShow = [
   'Portfolio2.0',

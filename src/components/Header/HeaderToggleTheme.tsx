@@ -18,18 +18,15 @@ export function HeaderToggleTheme({
   return (
     <button
       className={twMerge(
-        'rounded-full bg-zinc-200 p-2 transition hover:bg-zinc-300 dark:bg-zinc-800 hover:dark:bg-zinc-700',
-        pageWasScrolled && 'bg-opacity-30 hover:bg-opacity-60'
+        'rounded-full bg-zinc-200 p-2 transition hover:bg-zinc-400 dark:bg-zinc-800 dark:hover:bg-zinc-700',
+        pageWasScrolled && 'hover:bg-opacity-60'
       )}
       onClick={() => setIsDarkTheme((prev) => !prev)}
     >
       {darkTheme ? (
         <TbMoonOff size={darkIconsSize} />
       ) : (
-        <TbMoon
-          size={lightIconsSize}
-          className={twMerge(pageWasScrolled && 'text-light')}
-        />
+        <TbMoon size={lightIconsSize} />
       )}
     </button>
   );

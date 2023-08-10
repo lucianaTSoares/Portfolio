@@ -10,9 +10,9 @@ export function CardRoot({ children, animateOnHover, ...rest }: CardRootProps) {
     <div
       {...rest}
       className={twMerge(
-        'flex h-full flex-col justify-between rounded-md border border-solid border-transparent bg-card-light p-8 shadow-card dark:bg-card-dark',
+        'flex h-full flex-col justify-between rounded-md border border-solid border-transparent bg-card-light p-8 shadow-card transition duration-300 ease-linear dark:bg-card-dark',
         animateOnHover &&
-          'transition duration-400 ease-linear hover:border-indigo-500 hover:bg-translucent dark:hover:bg-translucent'
+          'hover:border-secondary hover:bg-translucent-light dark:hover:border-primary dark:hover:bg-translucent-dark'
       )}
     >
       {children}

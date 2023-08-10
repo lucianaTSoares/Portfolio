@@ -4,6 +4,7 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/composedComponents/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   safelist: ['.animation-direction-alternate', '.text-stroke-width-cal'],
@@ -20,10 +21,11 @@ module.exports = {
         },
       }),
       colors: {
-        primary: 'rgb(140, 123, 231)',
-        secondary: 'rgb(255, 94, 132)',
+        primary: 'rgb(99, 102, 241)',
+        secondary: 'rgb(255, 118, 90)',
         logo: 'rgb(46, 42, 78)',
-        translucent: 'rgba(145, 56, 255, 0.05)',
+        'translucent-light': 'rgba(255, 118, 90, 0.10)',
+        'translucent-dark': 'rgba(99, 102, 241, 0.10)',
         card: {
           light: 'rgb(255, 255, 255)',
           dark: 'rgba(255, 255, 255, 0.03)',
@@ -40,7 +42,7 @@ module.exports = {
       },
       boxShadow: {
         card: '0px 0px 7px 0px rgba(0, 0, 0, 0.08)',
-        'header-light': '0px 0px 17px 0px rgba(0, 0, 0, 0.26)',
+        'header-light': '0px 0px 10px 0px rgba(0, 0, 0, 0.26)',
         'header-dark': '0px 0px 10px 0px rgba(0, 0, 0, 0.5) ',
       },
       keyframes: {
