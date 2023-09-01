@@ -1,7 +1,7 @@
-import { FloatButton } from '../components/FloatButton';
-import { AboutSection } from '../composedComponents/Sections/About';
-import { PresentationSection } from '../composedComponents/Sections/Presentation';
-import { ProjectsSection } from '../composedComponents/Sections/Projects';
+import { FloatButton } from '@/components/FloatButton';
+import { AboutSection } from '@/components/Sections/About';
+import { PresentationSection } from '@/components/Sections/Presentation';
+import { ProjectsSection } from '@/components/Sections/Projects';
 
 export default function Home() {
   return (

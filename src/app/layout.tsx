@@ -1,7 +1,7 @@
 import './globals.css';
 import { Montserrat, Roboto_Mono, Poppins } from 'next/font/google';
-import { BurgerMenuProvider } from '@/context/BurgerMenuContext';
-import { LayoutHeader } from '../composedComponents/LayoutHeader';
+import { BurgerMenuProvider } from '@/context/burgerMenuContext';
+import { LayoutHeader } from '@/components/LayoutHeader';
 
 const montserrat = Montserrat({
   subsets: ['latin'],

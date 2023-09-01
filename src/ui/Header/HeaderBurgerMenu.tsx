@@ -1,4 +1,4 @@
-import { useBurgerMenuContext } from '@/context/BurgerMenuContext';
+import { useBurgerMenuContext } from '@/context/burgerMenuContext';
 import { twMerge } from 'tailwind-merge';
 
 export function HeaderBurgerMenu() {

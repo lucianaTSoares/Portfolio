@@ -1,7 +1,7 @@
 import { IoMdBrowsers } from 'react-icons/io';
 import { RiGitRepositoryLine } from 'react-icons/ri';
-import { getRepositories } from '../../services/Repositories.service';
-import { Card } from '../../components/Card';
+import { getRepositories } from '@/services/repositories';
+import { Card } from '@/ui/Card';
 
 interface GroupProjectsCardsProps {
   repositoriesToShow: string[];

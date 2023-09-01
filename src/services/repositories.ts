@@ -30,11 +30,9 @@ async function getRepositories({
   });
   const data: TRepository[] = await res.json();
 
-  const filteredRepositories = data.filter((repo) =>
+  return data.filter((repo) =>
     repositoriesToShow.includes(repo.name)
   );
-
-  return filteredRepositories;
 }
 
 export { getRepositories };
