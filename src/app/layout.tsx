@@ -14,12 +14,14 @@ const robotoMono = Roboto_Mono({
   weight: ['400', '700'],
   style: ['normal'],
   variable: '--font-roboto-mono',
+  display: 'swap',
 });
 
 const dmSans = Poppins({
   subsets: ['latin'],
   variable: '--font-dm-sans',
   weight: ['400', '500', '700', '800', '900'],
+  display: 'swap',
 });
 
 export const metadata = {

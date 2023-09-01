@@ -3,5 +3,5 @@ interface SectionContentProps {
 }
 
 export function SectionContent({ children }: SectionContentProps) {
-  return <div>{children}</div>;
+  return <div className='w-full'>{children}</div>;
 }
