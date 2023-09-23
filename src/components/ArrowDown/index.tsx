@@ -2,7 +2,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 
 export function ArrowDown() {
   return (
-    <div className='absolute inset-x-1/2 bottom-8 w-fit'>
+    <div className='absolute bottom-8 left-[49.3%] right-[49.3%] w-fit'>
       <IoIosArrowDown
         className='animate-arrow animation-direction-alternate animation-delay-100'
         size={25}

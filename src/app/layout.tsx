@@ -1,5 +1,5 @@
 import './globals.css';
-import { Montserrat, Roboto_Mono, Poppins } from 'next/font/google';
+import { Montserrat, Poppins, Roboto_Mono } from 'next/font/google';
 import { BurgerMenuProvider } from '@/context/burgerMenuContext';
 import { LayoutHeader } from '@/components/LayoutHeader';
 
@@ -39,7 +39,7 @@ export default function RootLayout({
       lang='pt-br'
       className={`${montserrat.variable} ${robotoMono.variable} ${dmSans.variable} dark`}
     >
-      <body className='prose max-w-none bg-light dark:prose-invert prose-h1:text-3xl prose-h2:text-[2rem] prose-h3:m-0 prose-h3:font-bold prose-p:font-normal prose-a:no-underline prose-ul:p-0 prose-li:m-0 prose-li:list-none prose-li:p-0 dark:bg-dark dark:prose-p:font-light sm:prose-h1:text-5xl'>
+      <body className='prose max-w-none bg-light dark:prose-invert prose-h1:text-3xl prose-h2:mt-0 prose-h2:text-[2rem] prose-h3:m-0 prose-h3:font-bold prose-p:font-normal prose-a:no-underline prose-ul:p-0 prose-li:m-0 prose-li:list-none prose-li:p-0 dark:bg-dark dark:prose-p:font-light sm:prose-h1:text-5xl'>
         <BurgerMenuProvider>
           <LayoutHeader />
         </BurgerMenuProvider>
