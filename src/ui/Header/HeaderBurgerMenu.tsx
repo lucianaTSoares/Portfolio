@@ -15,7 +15,7 @@ export function HeaderBurgerMenu() {
 
   return (
     <div
-      className='z-10 block cursor-pointer select-none sm:hidden'
+      className='z-10 block cursor-pointer select-none md:hidden'
       onClick={toggle}
     >
       <span className={spanClassName(['burger-menu-span'], isOpen)}></span>

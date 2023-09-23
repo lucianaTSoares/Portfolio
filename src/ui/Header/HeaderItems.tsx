@@ -14,8 +14,12 @@ export function HeaderItems({ menuItems }: HeaderItemsProps) {
   return (
     <ul
       className={twMerge(
-        'absolute right-0 top-0 -z-10 mt-0 flex h-screen w-full flex-col items-center justify-center gap-7 bg-light transition-all duration-0 dark:bg-black max-[638px]:duration-300 sm:relative sm:right-auto sm:z-0 sm:mt-auto sm:h-0 sm:w-full sm:flex-row sm:gap-8 sm:transition-none',
-        isOpen ? 'opacity-100' : 'opacity-0 sm:opacity-100'
+        'fixed right-0 top-0 -z-10 mt-0 flex h-screen w-full flex-col items-center justify-center gap-7 bg-white' +
+          ' transition-all duration-0 dark:bg-black max-[638px]:duration-300 md:relative md:right-auto md:z-0' +
+          ' md:mt-auto md:h-0 md:w-full md:flex-row md:gap-8 md:transition-none',
+        isOpen
+          ? 'left-0 opacity-100 md:static'
+          : 'left-full opacity-0 md:static md:opacity-100'
       )}
     >
       {menuItems.map((item) => (

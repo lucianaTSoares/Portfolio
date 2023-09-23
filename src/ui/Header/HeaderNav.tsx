@@ -12,7 +12,7 @@ export function HeaderNav({ children }: HeaderNavProps) {
         Lu{' '}
         <span
           id='header-logo'
-          className={`font-mono font-bold text-secondary dark:text-primary`}
+          className={`font-mono font-bold text-tertiary dark:text-primary`}
         >
           &#10100;dev&#95;&#10101;
         </span>
