@@ -1,13 +1,14 @@
 import { TypewriteCustom } from '../TypewriteCustom';
 import { ArrowDown } from '../ArrowDown';
 import { Section } from '@/ui/Section';
+import { SocialMedia } from '@/components/SocialMedia';
 
 export function PresentationSection() {
   return (
-    <Section.Root id='presentationSection' centralized>
+    <Section.Root id='presentation' centralized>
       <Section.Content>
         <h1 className='text-center font-bold !leading-loose md:!leading-tight '>
-          Luciana Soares
+          Oi, sou a Lucy!
           <div
             id='logo-span'
             className='flex flex-col justify-center gap-3 font-extrabold italic leading-none text-transparent dark:text-dark dark:text-stroke-width-calc sm:flex-wrap md:flex-row'
@@ -36,6 +37,7 @@ export function PresentationSection() {
             <span className='font-bold'>experiências digitais incríveis</span>.
           </p>
         </div>
+        <SocialMedia />
         <ArrowDown />
       </Section.Content>
     </Section.Root>

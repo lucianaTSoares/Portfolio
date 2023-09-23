@@ -2,7 +2,6 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -23,8 +22,9 @@ module.exports = {
       colors: {
         primary: 'rgb(99, 102, 241)',
         secondary: 'rgb(255, 118, 90)',
+        tertiary: 'rgb(194, 112, 149)',
         logo: 'rgb(46, 42, 78)',
-        'translucent-light': 'rgba(255, 118, 90, 0.10)',
+        'translucent-light': 'rgba(194, 112, 149, 0.10)',
         'translucent-dark': 'rgba(99, 102, 241, 0.10)',
         card: {
           light: 'rgb(255, 255, 255)',

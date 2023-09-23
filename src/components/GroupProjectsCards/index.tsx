@@ -33,7 +33,9 @@ export async function GroupProjectsCards({
                 <Card.Header>
                   <Card.Title title={repo.name} />
                 </Card.Header>
-                <Card.Content>{repo.description}</Card.Content>
+                <Card.Content>
+                  <p>{repo.description}</p>
+                </Card.Content>
                 <Card.Tags tags={repo.topics} />
               </div>
               <Card.Actions>
