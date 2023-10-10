@@ -2,12 +2,13 @@
 
 import { Section } from '@/ui/Section';
 import { Tab } from '@/ui/Tab';
-import { tabs } from '@/components/Sections/ExperiencesContent';
+import { getTabs } from '@/components/Sections/ExperiencesContent';
 import { Card } from '@/ui/Card';
 import { useCurrentTab } from '@/hooks/useCurrentTab';
 
 export function ExperiencesSection() {
   const { currentTab, handleTabClick } = useCurrentTab('exp1-tab');
+  const tabs = getTabs({ iconSize: 27 });
 
   return (
     <Section.Root
@@ -15,7 +16,7 @@ export function ExperiencesSection() {
       centralized
       className='flex min-h-[60vh] scroll-mt-14 flex-col'
     >
-      <Section.Title title='Experiencias' />
+      <Section.Title title='Experiências' />
       <Section.Content className='mt-4'>
         <Tab.Root>
           <Tab.Header id='tab-header'>
@@ -47,7 +48,10 @@ export function ExperiencesSection() {
                       </Card.Header>
                       <Card.Content className='mb-0'>
                         <p className='mt-0'>{tab.content}</p>
-                        <ul className='mb-0 flex flex-wrap items-center justify-start gap-5'>
+                        <ul
+                          key={tab.title}
+                          className='mb-0 flex flex-wrap items-center justify-start gap-5'
+                        >
                           {tab.techs?.map((tech) => (
                             <li key={tech.name}>{tech.icon}</li>
                           ))}

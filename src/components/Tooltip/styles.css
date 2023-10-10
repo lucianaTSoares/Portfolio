@@ -1,0 +1,9 @@
+.tooltip-arrow {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent rgb(63 63 70) transparent;
+}

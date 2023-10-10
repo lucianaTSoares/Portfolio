@@ -1,5 +1,9 @@
 export const navItems = [
   {
+    label: 'Serviços',
+    path: '#services',
+  },
+  {
     label: 'Sobre',
     path: '#about',
   },
@@ -12,11 +16,7 @@ export const navItems = [
     path: '#projects',
   },
   {
-    label: 'Skills',
-    path: '#skills',
-  },
-  {
-    label: 'Depoimentos',
-    path: '#recommendations',
+    label: 'Contato',
+    path: '#contact',
   },
 ];
