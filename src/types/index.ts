@@ -12,4 +12,10 @@ type TResponse = {
   success: boolean;
 };
 
-export type { TResponse, TRepository };
+type TContactForm = {
+  name: string;
+  message: string;
+};
+
+
+export type { TResponse, TRepository, TContactForm };

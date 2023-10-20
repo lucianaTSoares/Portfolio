@@ -8,7 +8,7 @@ interface CardLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 export function CardLink({ text, icon: Icon, ...rest }: CardLinkProps) {
   return (
     <a
-      className='flex w-fit flex-row items-center gap-2'
+      className='flex w-fit flex-row items-center gap-2 hover:underline'
       target='_blank'
       rel='noreferrer'
       href={rest.href}

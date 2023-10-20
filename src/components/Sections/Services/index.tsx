@@ -10,7 +10,7 @@ export function ServicesSection() {
     <Section.Root
       id='services'
       centralized
-      className='flex min-h-[60vh] scroll-mt-20 flex-col'
+      className='flex scroll-mt-20 flex-col'
     >
       <Section.Title title='Serviços' />
       <Section.Content>

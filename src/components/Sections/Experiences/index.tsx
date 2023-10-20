@@ -2,7 +2,7 @@
 
 import { Section } from '@/ui/Section';
 import { Tab } from '@/ui/Tab';
-import { getTabs } from '@/components/Sections/ExperiencesContent';
+import { getTabs } from '@/components/Sections/Experiences/experiencesContent';
 import { Card } from '@/ui/Card';
 import { useCurrentTab } from '@/hooks/useCurrentTab';
 
@@ -11,11 +11,7 @@ export function ExperiencesSection() {
   const tabs = getTabs({ iconSize: 27 });
 
   return (
-    <Section.Root
-      id='exp'
-      centralized
-      className='flex min-h-[60vh] scroll-mt-14 flex-col'
-    >
+    <Section.Root id='exp' className='flex scroll-mt-32 flex-col'>
       <Section.Title title='Experiências' />
       <Section.Content className='mt-4'>
         <Tab.Root>

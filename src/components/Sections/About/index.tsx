@@ -2,11 +2,7 @@ import { Section } from '@/ui/Section';
 
 export function AboutSection() {
   return (
-    <Section.Root
-      id='about'
-      centralized
-      className='flex min-h-[70vh] scroll-mt-14 flex-col'
-    >
+    <Section.Root id='about' className='flex scroll-mt-32 flex-col'>
       <Section.Title title='Sobre' />
       <Section.Content
         id='about-content'

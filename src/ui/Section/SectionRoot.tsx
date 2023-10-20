@@ -10,17 +10,23 @@ export function SectionRoot({
   centralized = false,
   ...rest
 }: SectionRootProps) {
+  const { className, ...restWithoutClassName } = rest;
+
   return (
     <section
-      {...rest}
+      {...restWithoutClassName}
+      className='scroll-mt-16 md:scroll-mt-8'
       id={rest.id}
-      className={twMerge(
-        'global-container flex min-h-screen items-center ',
-        centralized && 'justify-center',
-        rest.className
-      )}
     >
-      {children}
+      <div
+        className={twMerge(
+          'global-container flex items-center py-10 md:py-20',
+          centralized && 'justify-center',
+          className
+        )}
+      >
+        {children}
+      </div>
     </section>
   );
 }
