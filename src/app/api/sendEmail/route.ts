@@ -17,6 +17,7 @@ export async function POST(request: Request) {
     const text = `${name ? `Nome: ${name}\n` : ''}${email  ? `E-mail: ${email}\n` : ''}Feedback: ${message}`
 
     const mailOptions = {
+      from: 'LuDev <ludevmailer@gmail.com>',
       to: 'lucianat.s@hotmail.com',
       subject: 'Feedback LuDev',
       text
