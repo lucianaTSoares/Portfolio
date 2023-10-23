@@ -23,11 +23,16 @@ export async function POST(request: Request) {
       text
     };
 
-    transporter.sendMail(mailOptions, (error) => {
-      if (error) {
-        NextResponse.json({ message: 'Error sending email.' }, { status: 500 })
-      }
-    });
+    await new Promise((resolve, reject) => { 
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          reject(error);
+          NextResponse.json({ message: 'Error sending email.' }, { status: 500 })
+        } else {
+          resolve(info)
+        }
+      });
+    })
   
     return NextResponse.json({ message: 'Email sent.' }, { status: 200 })
   } catch (e) {
