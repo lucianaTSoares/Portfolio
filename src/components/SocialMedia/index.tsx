@@ -1,9 +1,19 @@
 import { socialMediaList } from '@/components/SocialMedia/socialMediaList';
 import { ToolTip } from '@/components/Tooltip';
+import { twMerge } from 'tailwind-merge';
 
-export function SocialMedia() {
+interface SocialMediaProps {
+  className?: string;
+}
+
+export function SocialMedia({ className }: SocialMediaProps) {
   return (
-    <ul className='mt-14 flex flex-row items-center justify-center gap-7'>
+    <ul
+      className={twMerge(
+        'flex flex-row items-center justify-center gap-7',
+        className
+      )}
+    >
       {socialMediaList.map((item) => (
         <>
           <li data-tooltip-target={item.name} key={item.name}>

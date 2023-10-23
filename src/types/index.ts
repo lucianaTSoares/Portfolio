@@ -13,7 +13,8 @@ type TResponse = {
 };
 
 type TContactForm = {
-  name: string;
+  name?: string
+  email?: string
   message: string;
 };
 

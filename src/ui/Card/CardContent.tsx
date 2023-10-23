@@ -4,7 +4,7 @@ interface CardContentProps extends React.HTMLAttributes<HTMLParagraphElement> {
 
 export function CardContent({ children, ...rest }: CardContentProps) {
   return (
-    <div className='mb-5 w-full' {...rest}>
+    <div className='w-full' {...rest}>
       {children}
     </div>
   );

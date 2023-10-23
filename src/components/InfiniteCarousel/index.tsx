@@ -3,7 +3,7 @@ import { ToolTip } from '../Tooltip';
 
 export function InfiniteCarousel() {
   return (
-    <div className='logos w-full'>
+    <div className='logos w-full' data-aos='zoom-in'>
       <div className='logos-slide'>
         {techList.map((tech) => {
           const { name, icon: Icon, color } = tech;

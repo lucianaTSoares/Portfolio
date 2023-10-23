@@ -1,18 +1,18 @@
-'use client';
-
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 import { TContactForm } from '@/types';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { formSchema } from '@/schemas/formSchema';
-import { SendEmailHandler } from '@/components/Sections/Contact/sendEmailHandler';
+import { SendEmailHandler } from '@/components/FeedbackWidget/WidgetForm/sendEmailHandler';
 import { Card } from '@/ui/Card';
 import { Field } from '@/ui/Field';
+import { Button } from '@/ui/Button';
 
 export function WidgetForm() {
   const {
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful, isSubmitting },
     control,
+    reset,
   } = useForm<TContactForm>({
     resolver: yupResolver(formSchema),
     mode: 'all',
@@ -21,6 +21,11 @@ export function WidgetForm() {
 
   const onSubmit: SubmitHandler<TContactForm> = async (data) => {
     await SendEmailHandler(data);
+    if (isSubmitSuccessful) {
+      reset({
+        message: '',
+      });
+    }
   };
 
   return (
@@ -33,36 +38,59 @@ export function WidgetForm() {
             name='name'
             render={({ field: { value, onChange, onBlur, name } }) => (
               <Field<TContactForm>
-                label='Nome completo'
+                label='Nome completo (opcional)'
                 dataName={name}
                 errors={errors}
-                value={value}
+                value={value || ''}
                 onChange={onChange}
                 onBlur={onBlur}
                 count={50}
               />
             )}
           />
-
+          <Controller
+            control={control}
+            name='email'
+            render={({ field: { value, onChange, onBlur, name } }) => (
+              <Field<TContactForm>
+                label='E-mail (opcional)'
+                dataName={name}
+                errors={errors}
+                value={value || ''}
+                onChange={onChange}
+                onBlur={onBlur}
+                count={50}
+                placeholder='email@example.com'
+              />
+            )}
+          />
           <Controller
             control={control}
             name='message'
             render={({ field: { value, onChange, onBlur, name } }) => (
               <Field<TContactForm>
                 as='textarea'
-                label='Mensagem'
+                label='Seu feedback'
                 dataName={name}
                 errors={errors}
                 value={value}
                 onChange={onChange}
                 onBlur={onBlur}
-                count={500}
+                count={100}
                 placeholder='Olá, gostei muito do seu portfólio!'
               />
             )}
           />
 
-          <button type='submit'>aaaaaaaa</button>
+          <Button
+            className='mt-3'
+            type='submit'
+            loading={isSubmitting}
+            disabled={isSubmitting}
+            animateOnHover
+          >
+            Enviar
+          </Button>
         </form>
       </Card.Content>
     </Card.Root>

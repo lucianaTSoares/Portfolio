@@ -7,7 +7,7 @@ export function ProjectsSection() {
   return (
     <Section.Root id='projects' className='flex scroll-mt-32 flex-col'>
       <Section.Title title='Projetos' />
-      <Section.Content>
+      <Section.Content className='flex flex-col items-center'>
         <GroupProjectsCards repositoriesToShow={repositoriesToShow} />
       </Section.Content>
     </Section.Root>

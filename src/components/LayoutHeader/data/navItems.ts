@@ -15,8 +15,4 @@ export const navItems = [
     label: 'Projetos',
     path: '#projects',
   },
-  {
-    label: 'Contato',
-    path: '#contact',
-  },
 ];

@@ -14,11 +14,12 @@ export function SectionRoot({
 
   return (
     <section
-      {...restWithoutClassName}
-      className='scroll-mt-16 md:scroll-mt-8'
       id={rest.id}
+      className='scroll-mt-16 md:scroll-mt-8'
+      {...restWithoutClassName}
     >
       <div
+        data-aos='fade-up'
         className={twMerge(
           'global-container flex items-center py-10 md:py-20',
           centralized && 'justify-center',

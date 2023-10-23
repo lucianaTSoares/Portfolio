@@ -37,7 +37,7 @@ export function PresentationSection() {
             <span className='font-bold'>experiências digitais incríveis</span>.
           </p>
         </div>
-        <SocialMedia />
+        <SocialMedia className='mt-14' />
         <ArrowDown />
       </Section.Content>
     </Section.Root>
