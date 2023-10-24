@@ -17,10 +17,11 @@ export function Button({
   return (
     <button
       className={twMerge(
-        'flex items-center justify-center rounded-md bg-tertiary px-3 py-3 text-white disabled:bg-opacity-80 dark:bg-primary dark:disabled:bg-opacity-80',
+        'bg-secondary flex items-center justify-center rounded-md px-3 py-3 text-white disabled:bg-opacity-80 dark:bg-primary dark:disabled:bg-opacity-80',
         animateOnHover && 'hover:bg-opacity-80 dark:hover:bg-opacity-80',
         className
       )}
+      aria-disabled={restProps.disabled}
       {...restProps}
     >
       {loading ? <CgSpinner size={28} className='animate-spin' /> : children}

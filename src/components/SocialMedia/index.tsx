@@ -18,7 +18,7 @@ export function SocialMedia({ className }: SocialMediaProps) {
         <>
           <li data-tooltip-target={item.name} key={item.name}>
             <ToolTip tooltip={item.name}>
-              <a href={item.path} target='_blank'>
+              <a href={item.path} target='_blank' aria-label={item.name}>
                 {item.icon}
               </a>
             </ToolTip>

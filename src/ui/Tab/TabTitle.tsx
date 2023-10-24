@@ -14,7 +14,7 @@ export function TabTitle({ title, activeTab, ...rest }: TabTitleProps) {
           ' bg-opacity-30 text-start font-bold transition-all hover:bg-opacity-100 dark:bg-opacity-30' +
           ' hover:dark:bg-opacity-70',
         activeTab
-          ? 'border-tertiary text-tertiary dark:border-primary dark:bg-opacity-50' +
+          ? 'border-secondary text-secondary dark:border-primary dark:bg-opacity-50' +
               ' bg-translucent-light dark:bg-translucent-dark' +
               ' dark:text-primary'
           : ''

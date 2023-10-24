@@ -22,7 +22,7 @@ export function ServiceContent({
 }: ServiceContentProps) {
   return (
     <div id={rest.id} className='flex flex-row items-center gap-7'>
-      <div className='hidden justify-center rounded-lg bg-gradient-to-tr from-primary to-tertiary p-3 lg:flex'>
+      <div className='to-secondary hidden justify-center rounded-lg bg-gradient-to-tr from-primary p-3 lg:flex'>
         <Image
           src={svgImage}
           width={imageWidth}
@@ -32,7 +32,7 @@ export function ServiceContent({
         />
       </div>
       <div>
-        <h4 className='bold'>{data.title}</h4>
+        <h3 className='bold !mb-2 !mt-6 text-base'>{data.title}</h3>
         <p>{data.content}</p>
       </div>
     </div>

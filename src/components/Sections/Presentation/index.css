@@ -1,0 +1,9 @@
+#logo-span {
+  @apply bg-gradient-to-r from-primary from-15% to-secondary bg-clip-text;
+  font-family: var(--font-dm-sans);
+  -webkit-text-stroke-color: transparent;
+}
+
+.dark #logo-span {
+  -webkit-text-stroke-width: calc(1em / 16);
+}

@@ -1,0 +1,7 @@
+.burger-menu-span {
+  transform: rotate(45deg) translate(0, 6px);
+}
+
+.burger-menu-span--negative {
+  transform: rotate(-45deg) translate(0, -6px);
+}

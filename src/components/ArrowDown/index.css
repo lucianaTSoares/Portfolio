@@ -1,0 +1,5 @@
+.arrow-animate {
+  @apply animate-arrow;
+  animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}

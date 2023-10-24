@@ -17,6 +17,8 @@ export function HeaderToggleTheme({
 
   return (
     <button
+      type='button'
+      aria-label={darkTheme ? 'Tema escuro' : 'Tema claro'}
       className={twMerge(
         'rounded-full bg-zinc-200 p-2 transition hover:bg-zinc-400 dark:bg-zinc-800 dark:hover:bg-zinc-700',
         pageWasScrolled && 'hover:bg-opacity-60'

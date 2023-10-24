@@ -9,7 +9,7 @@ export function CardTags({ tags, ...rest }: CardTagsProps) {
         <li
           id={`item-${tag}`}
           key={tag}
-          className='whitespace-nowrap rounded-[20px] bg-translucent-light !px-4 !py-1.5 text-sm font-semibold leading-[unset] text-tertiary dark:bg-translucent-dark dark:bg-opacity-10 dark:text-primary'
+          className='text-secondary whitespace-nowrap rounded-[20px] bg-translucent-light !px-4 !py-1.5 text-sm font-semibold leading-[unset] dark:bg-translucent-dark dark:bg-opacity-10 dark:text-primary'
         >
           {tag}
         </li>

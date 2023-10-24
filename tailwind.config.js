@@ -6,7 +6,6 @@ module.exports = {
     './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  safelist: ['.animation-direction-alternate', '.text-stroke-width-cal'],
   theme: {
     extend: {
       typography: ({ theme }) => ({
@@ -21,10 +20,8 @@ module.exports = {
       }),
       colors: {
         primary: 'rgb(99, 102, 241)',
-        secondary: 'rgb(255, 118, 90)',
-        tertiary: 'rgb(194, 112, 149)',
-        logo: 'rgb(46, 42, 78)',
-        'translucent-light': 'rgba(194, 112, 149, 0.10)',
+        secondary: 'rgb(223, 115, 121)',
+        'translucent-light': 'rgba(223, 115, 121, 0.10)',
         'translucent-dark': 'rgba(99, 102, 241, 0.10)',
         card: {
           light: 'rgb(255, 255, 255)',
@@ -70,8 +67,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('./plugins/animateDirection'),
     require('./plugins/animateDelay'),
-    require('./plugins/textStrokeWidth'),
   ],
 };
