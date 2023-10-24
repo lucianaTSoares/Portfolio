@@ -1,7 +1,10 @@
 import { Section } from '@/ui/Section';
 import { GroupProjectsCards } from '@/components/GroupProjectsCards';
-import { MdKeyboardDoubleArrowLeft } from 'react-icons/md';
-import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'LuDev - Projetos',
+};
 
 const repositoriesToShow = [
   'Portfolio2.0',

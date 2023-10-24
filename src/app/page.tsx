@@ -17,9 +17,6 @@ export default function Home() {
       <AboutSection />
       <ExperiencesSection />
       <ProjectsSection />
-      <Footer />
-      <FloatButton />
-      <FeedbackWidget />
     </main>
   );
 }

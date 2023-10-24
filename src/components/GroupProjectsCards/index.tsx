@@ -6,7 +6,7 @@ import {
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md';
 import { twMerge } from 'tailwind-merge';
-import { ProjectItems } from './ProjectItems';
+import { ProjectList } from './ProjectList';
 
 interface GroupProjectsCardsProps {
   repositoriesToShow: string[];
@@ -31,7 +31,7 @@ export async function GroupProjectsCards({
         href={isBackAction ? '/#projects' : '/projects'}
         scroll={false}
         className={twMerge(
-          'flex w-full items-center  gap-1 font-bold',
+          'flex w-full items-center gap-1 font-bold',
           isBackAction ? 'justify-start' : 'justify-end'
         )}
       >
@@ -47,9 +47,7 @@ export async function GroupProjectsCards({
           </>
         )}
       </Link>
-      <ul className='mt-2 flex flex-wrap items-stretch justify-center gap-8'>
-        <ProjectItems repositories={repositories} />
-      </ul>
+      <ProjectList repositories={repositories} />
     </>
   );
 }

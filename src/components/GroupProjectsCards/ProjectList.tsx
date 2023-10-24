@@ -6,15 +6,15 @@ import { Card } from '@/ui/Card';
 import { IoMdBrowsers } from 'react-icons/io';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 
-interface ProjectItemsProps {
+interface ProjectListProps {
   repositories: TResponse;
 }
 
-export function ProjectItems({ repositories }: ProjectItemsProps) {
+export function ProjectList({ repositories }: ProjectListProps) {
   const count = useFadeTransition(repositories.data, 60);
 
   return (
-    <>
+    <ul className='mt-2 flex flex-wrap gap-8'>
       {repositories.data.slice(0, count).map((repo) => (
         <li
           id={repo.id.toString()}
@@ -49,6 +49,6 @@ export function ProjectItems({ repositories }: ProjectItemsProps) {
           </Card.Root>
         </li>
       ))}
-    </>
+    </ul>
   );
 }
