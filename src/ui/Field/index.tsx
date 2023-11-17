@@ -44,7 +44,7 @@ export function Field<T extends FieldValues>({
         placeholder={placeholder}
       />
       <label
-        className='absolute -top-6 left-[1px] text-sm transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-focus:-top-6 peer-focus:left-[1px] peer-focus:text-sm peer-focus:text-current dark:peer-placeholder-shown:text-zinc-300'
+        className='absolute -top-6 left-[1px] w-[90%] overflow-hidden text-ellipsis whitespace-nowrap text-sm transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-zinc-600 peer-focus:-top-6 peer-focus:left-[1px] peer-focus:text-sm peer-focus:text-current dark:peer-placeholder-shown:text-zinc-300'
         htmlFor={label}
       >
         {label}

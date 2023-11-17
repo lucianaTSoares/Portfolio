@@ -18,8 +18,7 @@ export function AboutSection() {
           <h3>Minha educação e marcos importantes...</h3>
           <ul>
             <li className='flex items-center gap-5'>
-              <p className='whitespace-nowrap text-xl !font-bold'>Dez. 2020</p>
-              <span className='block h-12 w-[4px] bg-text-dark'></span>
+              <p className='whitespace-nowrap text-xl !font-bold'>Dez. 2020:</p>
               <p>
                 Formação como tecnóloga em Análise e Desenvolvimento de Sistemas
                 na UNIP
@@ -27,24 +26,21 @@ export function AboutSection() {
             </li>
             <li className='flex items-center gap-5'>
               <p className='w-fit whitespace-nowrap text-xl !font-bold '>
-                Mar. 2022
+                Mar. 2022:
               </p>
-              <span className='block h-12 w-[4px] bg-text-dark'></span>
               <p>Formação como Desenvolvedora Web na Generation Brasil</p>
             </li>
             <li className='flex items-center gap-5'>
               <p className='w-fit whitespace-nowrap text-xl !font-bold '>
-                Mai. 2022
+                Mai. 2022:
               </p>
-              <span className='block h-12 w-[4px] bg-text-dark'></span>
               <p>
                 Adquirindo minha primeira experiência profissional como Dev Full
                 Stack na 6place
               </p>
             </li>
             <li className='flex items-center gap-5'>
-              <p className='whitespace-nowrap text-xl !font-bold'>Set. 2022</p>
-              <span className='block h-12 w-[4px] bg-text-dark'></span>
+              <p className='whitespace-nowrap text-xl !font-bold'>Set. 2022:</p>
               <p>
                 Minha primeira certificação: AWS Certified Cloud Practitioner
               </p>

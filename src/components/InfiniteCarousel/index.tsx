@@ -14,8 +14,7 @@ export function InfiniteCarousel() {
             >
               <ToolTip tooltip={name}>
                 <Icon
-                  className='text-zinc-700 dark:text-text-dark'
-                  size={50}
+                  className='svg-size text-zinc-700 dark:text-text-dark'
                   color={color}
                 />
               </ToolTip>
@@ -33,7 +32,7 @@ export function InfiniteCarousel() {
             >
               <ToolTip tooltip={name}>
                 <Icon
-                  className='text-zinc-700 dark:text-text-dark'
+                  className='svg-size text-zinc-700 dark:text-text-dark'
                   size={50}
                   color={color}
                 />

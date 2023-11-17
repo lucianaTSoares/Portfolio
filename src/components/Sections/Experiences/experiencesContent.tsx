@@ -9,7 +9,6 @@ import {
   SiGit,
   SiHeroku,
   SiHtml5,
-  SiJavascript,
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
@@ -18,12 +17,11 @@ import {
   SiRobotframework,
   SiSpringboot,
   SiStyledcomponents,
-  SiTypescript,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import { GrMysql } from 'react-icons/gr';
-
-const iconSize = 30;
+import { RiJavascriptFill } from 'react-icons/ri';
+import { BiLogoTypescript } from 'react-icons/bi';
 
 export function getTabs({ iconSize }: { iconSize: number }) {
   return [
@@ -42,7 +40,7 @@ export function getTabs({ iconSize }: { iconSize: number }) {
           name: 'TypeScript',
           icon: (
             <ToolTip tooltip='TypeScript'>
-              <SiTypescript size={iconSize} />
+              <BiLogoTypescript size={30} />
             </ToolTip>
           ),
         },
@@ -191,7 +189,7 @@ export function getTabs({ iconSize }: { iconSize: number }) {
           name: 'JavaScript',
           icon: (
             <ToolTip tooltip='JavaScript'>
-              <SiJavascript size={iconSize} />
+              <RiJavascriptFill size={30} />
             </ToolTip>
           ),
         },
@@ -199,7 +197,7 @@ export function getTabs({ iconSize }: { iconSize: number }) {
           name: 'TypeScript',
           icon: (
             <ToolTip tooltip='TypeScript'>
-              <SiTypescript size={iconSize} />
+              <BiLogoTypescript size={30} />
             </ToolTip>
           ),
         },

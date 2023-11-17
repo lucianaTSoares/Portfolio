@@ -38,6 +38,18 @@
   display: inline-block;
 }
 
+.svg-size {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .svg-size {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);
