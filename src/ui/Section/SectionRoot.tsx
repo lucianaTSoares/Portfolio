@@ -3,11 +3,13 @@ import { twMerge } from 'tailwind-merge';
 interface SectionRootProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
   centralized?: boolean;
+  backgroundColor?: string;
 }
 
 export function SectionRoot({
   children,
   centralized = false,
+  backgroundColor,
   ...rest
 }: SectionRootProps) {
   const { className, ...restWithoutClassName } = rest;
@@ -15,7 +17,7 @@ export function SectionRoot({
   return (
     <section
       id={rest.id}
-      className='scroll-mt-16 md:scroll-mt-8'
+      className={twMerge('scroll-mt-16 md:scroll-mt-8', backgroundColor)}
       {...restWithoutClassName}
     >
       <div

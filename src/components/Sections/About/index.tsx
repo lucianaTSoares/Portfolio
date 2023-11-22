@@ -2,23 +2,33 @@ import { Section } from '@/ui/Section';
 
 export function AboutSection() {
   return (
-    <Section.Root id='about' className='flex scroll-mt-32 flex-col'>
+    <Section.Root
+      id='about'
+      backgroundColor='dark:bg-[#151515] bg-[#f7f7f7]'
+      className='flex scroll-mt-32 flex-col'
+    >
       <Section.Title title='Sobre' />
       <Section.Content
         id='about-content'
         className='mt-5 flex w-full flex-col justify-between gap-12 lg:flex-row'
       >
-        <div className='lg:w-1/2'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet debitis
-          et, fugit laborum maxime reiciendis reprehenderit soluta. Accusantium
-          consequatur delectus id impedit laboriosam, laudantium odio quas quod
-          rem! At, voluptas.
+        <div className='text-justify lg:w-1/2'>
+          Oi, eu sou a Luciana, uma desenvolvedora que adora transformar ideias
+          em experiências incríveis na web! Minha paixão por tecnologia começou
+          quando eu era criança e tive meu primeiro encontro com um computador.
+          Desde então, tracei meu caminho para a área de desenvolvimento, onde
+          estou há pouco mais de 1 ano profissionalmente. Estou sempre buscando
+          aprender as novidades no mundo tech para fazer a diferença na vida das
+          pessoas.
+          <div className='logo--variant mt-6 text-center text-3xl font-bold text-transparent lg:mt-14'>
+            Vamos criar algo incrível juntos!
+          </div>
         </div>
         <div className='lg:w-1/2'>
           <h3>Minha educação e marcos importantes...</h3>
           <ul>
             <li className='flex items-center gap-5'>
-              <p className='whitespace-nowrap text-xl !font-bold'>Dez. 2020:</p>
+              <p className='whitespace-nowrap text-xl !font-bold'>Dez. 2021:</p>
               <p>
                 Formação como tecnóloga em Análise e Desenvolvimento de Sistemas
                 na UNIP

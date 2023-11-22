@@ -10,8 +10,8 @@ export function PresentationSection() {
         <h1 className='flex flex-col items-center text-center font-bold !leading-loose md:!leading-tight '>
           Oi, sou a Luciana!
           <div
-            id='logo-span'
-            className='flex w-fit flex-col justify-center gap-3 font-extrabold italic leading-none text-transparent dark:text-dark sm:flex-wrap md:flex-row'
+            id='logo'
+            className='logo flex w-fit flex-col justify-center gap-3 font-extrabold italic leading-none text-transparent dark:text-dark sm:flex-wrap md:flex-row'
           >
             <span>Desenvolvedora</span>
             <TypewriteCustom
