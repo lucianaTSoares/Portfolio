@@ -1,5 +1,5 @@
-import { techList } from '../../data/techList';
-import { ToolTip } from '../Tooltip';
+import { techList } from '@/data/techList';
+import { ToolTip } from '@/components/Tooltip';
 
 export function InfiniteCarousel() {
   return (

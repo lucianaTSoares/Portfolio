@@ -1,10 +1,10 @@
 import { Section } from '@/ui/Section';
 import { ServiceContent } from '@/components/ServicesContent';
-import { useServicesSection } from '@/hooks/useServicesSection';
+import { servicesDataSection } from '@/data/servicesDataSection';
 
 export function ServicesSection() {
   const { servicesData, mappedServicesIcons, getIconSize } =
-    useServicesSection();
+    servicesDataSection();
 
   return (
     <Section.Root

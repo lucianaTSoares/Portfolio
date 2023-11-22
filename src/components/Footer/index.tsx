@@ -1,4 +1,4 @@
-import { SocialMedia } from '../SocialMedia';
+import { SocialMedia } from '@/components/SocialMedia';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

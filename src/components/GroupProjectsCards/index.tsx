@@ -1,5 +1,5 @@
 import { getRepositories } from '@/services/repositories';
-import { ErrorOnList } from '@/components/GroupProjectsCards/errorOnList';
+import { ErrorOnList } from '@/components/GroupProjectsCards/ErrorOnList';
 import Link from 'next/link';
 import {
   MdKeyboardDoubleArrowLeft,

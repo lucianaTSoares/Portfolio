@@ -1,5 +1,5 @@
-import { TypewriteCustom } from '../../TypewriteCustom';
-import { ArrowDown } from '../../ArrowDown';
+import { TypewriteCustom } from '@/components/TypewriteCustom';
+import { ArrowDown } from '@/components/ArrowDown';
 import { Section } from '@/ui/Section';
 import { SocialMedia } from '@/components/SocialMedia';
 

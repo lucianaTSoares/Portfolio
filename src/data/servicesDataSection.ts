@@ -2,7 +2,7 @@ import FrontEnd from 'public/frontend.svg';
 import BackEnd from 'public/backend.svg';
 import Test from 'public/quality-control.svg';
 
-export function useServicesSection() { 
+export function servicesDataSection() { 
 
   const mappedServicesIcons: Record<string, string> = {
     'APIs': BackEnd,

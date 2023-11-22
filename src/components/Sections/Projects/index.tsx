@@ -1,4 +1,4 @@
-import { GroupProjectsCards } from '../../GroupProjectsCards';
+import { GroupProjectsCards } from '@/components/GroupProjectsCards';
 import { Section } from '@/ui/Section';
 
 const repositoriesToShow = ['Portfolio', 'HomePlus-API', 'HomePlus-FrontEnd'];

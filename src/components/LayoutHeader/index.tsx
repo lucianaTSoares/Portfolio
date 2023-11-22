@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import { Header } from '@/ui/Header';
-import { navItems } from './data/navItems';
+import { navItems } from '@/data/navItems';
 
 export function LayoutHeader() {
   const currentPage = usePathname();
