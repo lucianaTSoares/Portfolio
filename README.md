@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Portfólio</h1>
 
-## Getting Started
+![image](https://github.com/lucianaTSoares/Porfolio2.0/assets/88734065/334c2776-48f4-48a4-a78e-3dc0e22904d3)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Sobre
+Um portfólio desenvolvido com foco em mostrar ao público meu estilo, marca e de forma mais interativa sobre mim, experiências com programação e projetos que realizei ao longo da minha vida como desenvolvedora.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias e ferramentas
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [AOS - Animate On Scroll Library](https://michalsnik.github.io/aos/)
+- [React Hook Form](https://react-hook-form.com/)
+- [yup](https://www.npmjs.com/package/yup)
+- [Nodemailer](https://nodemailer.com/)
+- [Vercel (Deploy)](https://vercel.com
+)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Integrações
+- **API GitHub**: Os projetos apresentados no portfólio são buscados através da API externa que o Github oferece. *Veja mais sobre a API*: [https://docs.github.com/pt/rest](https://docs.github.com/pt/rest).
+- **Gmail**: O portfólio contém a funcionalidade de envio de feedback sobre o site. Dessa forma, utilizei o Nodemailer em conjunto com o SMTP do Gmail para que os feedbacks dos usuários fossem recebidos em meu e-mail.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Autora
 
-## Learn More
+<a href="https://github.com/lucianaTSoares">
+    <img src="https://media.licdn.com/dms/image/D4D03AQG2U_66HElvzg/profile-displayphoto-shrink_200_200/0/1690825190221?e=1706140800&v=beta&t=UFvQnkF8hgDWNvbYL4GkXGkOcycYpk2yy-wKWzA-iJU" width="100px" alt="github avatar"><br>
+    <sub>Luciana Thomaz Soares ✨</sub>
+</a>
 
-To learn more about Next.js, take a look at the following resources:
+<br>Feito com carinho ❤
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="https://www.linkedin.com/in/lucianatsoares/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+  
+<a href="mailto:lucianat.s@hotmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Outlook">
+</a>
