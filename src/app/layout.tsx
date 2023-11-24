@@ -1,12 +1,13 @@
-import './globals.css';
-import { Montserrat, Poppins, Roboto_Mono } from 'next/font/google';
-import { BurgerMenuProvider } from '@/context/burgerMenuContext';
-import { LayoutHeader } from '@/components/LayoutHeader';
 import { AOSInit } from '@/aos';
-import { Footer } from '../components/Footer';
-import { FloatButton } from '../components/FloatButton';
-import { FeedbackWidget } from '../components/FeedbackWidget';
+import { FeedbackWidget } from '@/components/FeedbackWidget';
+import { FloatButton } from '@/components/FloatButton';
+import { Footer } from '@/components/Footer';
+import { LayoutHeader } from '@/components/LayoutHeader';
+import { ToasterCustom } from '@/components/ToasterCustom';
+import { BurgerMenuProvider } from '@/context/burgerMenuContext';
 import { Metadata } from 'next';
+import { Montserrat, Poppins, Roboto_Mono } from 'next/font/google';
+import './globals.css';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -67,6 +68,7 @@ export default function RootLayout({
         <Footer />
         <FloatButton />
         <FeedbackWidget />
+        <ToasterCustom />
       </body>
     </html>
   );

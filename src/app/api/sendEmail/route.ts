@@ -17,8 +17,8 @@ export async function POST(request: Request) {
     const text = `${name ? `Nome: ${name}\n` : ''}${email  ? `E-mail: ${email}\n` : ''}Feedback: ${message}`
 
     const mailOptions = {
-      from: 'LuDev <ludevmailer@gmail.com>',
-      to: 'lucianat.s@hotmail.com',
+      from: `LuDev <${process.env.GMAIL_USER}>`,
+      to: process.env.MY_EMAIL,
       subject: 'Feedback LuDev',
       text
     };
@@ -27,15 +27,14 @@ export async function POST(request: Request) {
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           reject(error);
-          NextResponse.json({ message: 'Error sending email.' }, { status: 500 })
         } else {
-          resolve(info)
+          resolve(info);
         }
       });
     })
   
-    return NextResponse.json({ message: 'Email sent.' }, { status: 200 })
+    return NextResponse.json({ message: 'Feedback enviado com sucesso!', status: 200 })
   } catch (e) {
-    return NextResponse.json({ message: 'Error sending email.' }, { status: 500 })
+    return NextResponse.json({ message: 'Erro ao enviar o feedback.' , status: 500 })
   }
 }
