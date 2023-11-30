@@ -6,7 +6,6 @@ import { SendEmailHandler } from '@/components/FeedbackWidget/WidgetForm/sendEma
 import { Card } from '@/ui/Card';
 import { Field } from '@/ui/Field';
 import { Button } from '@/ui/Button';
-import toast from 'react-hot-toast';
 
 export function WidgetForm() {
   const {
@@ -28,14 +27,6 @@ export function WidgetForm() {
       });
     }
   };
-
-  const notify = () =>
-    toast.error('Here is your toast.', {
-      style: {
-        zIndex: 99999,
-      },
-      position: 'top-center',
-    });
 
   return (
     <Card.Root className='dark:bg-[#151414]'>

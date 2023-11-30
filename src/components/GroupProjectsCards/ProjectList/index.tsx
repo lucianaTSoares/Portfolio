@@ -5,6 +5,7 @@ import { TResponse } from '@/types';
 import { Card } from '@/ui/Card';
 import { IoMdBrowsers } from 'react-icons/io';
 import { RiGitRepositoryLine } from 'react-icons/ri';
+import { dateConvert } from '@/utils/dateConverter';
 
 interface ProjectListProps {
   repositories: TResponse;
@@ -25,7 +26,7 @@ export function ProjectList({ repositories }: ProjectListProps) {
           <Card.Root animateOnHover>
             <div>
               <Card.Header>
-                <Card.Title title={repo.name} />
+                <Card.Title title={repo.name.replace(/-/g, ' ')} />
               </Card.Header>
               <Card.Content>
                 <p>{repo.description}</p>
@@ -45,6 +46,9 @@ export function ProjectList({ repositories }: ProjectListProps) {
                   icon={IoMdBrowsers}
                 />
               )}
+              <p className='mb-0 text-sm'>
+                Última atualização: {dateConvert(repo.pushed_at)}
+              </p>
             </Card.Actions>
           </Card.Root>
         </li>

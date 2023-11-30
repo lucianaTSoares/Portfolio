@@ -9,7 +9,7 @@ type GetRepositoriesProps = {
 async function getRepositories({
   repositoriesToShow,
   visibility = 'public',
-  sort = 'created',
+  sort = 'pushed',
 }: GetRepositoriesProps): Promise<TResponse | null> {
   try {
     const params = new URLSearchParams({
@@ -21,6 +21,7 @@ async function getRepositories({
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
       },
+      next: { revalidate: 0 }
     });
 
     const data = await res.json();

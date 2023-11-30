@@ -7,14 +7,14 @@ export const metadata: Metadata = {
 };
 
 const repositoriesToShow = [
-  'Portfolio2.0',
   'Portfolio',
-  'Adopet',
   'HomePlus-API',
   'HomePlus-FrontEnd',
   'Imersao-Dev',
   'GenCash',
   'kenzieflix',
+  'Recomendador-de-amigos',
+  'Authentication-app-api',
 ];
 
 export default async function Projects() {

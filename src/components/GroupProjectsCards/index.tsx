@@ -27,26 +27,30 @@ export async function GroupProjectsCards({
 
   return (
     <>
-      <Link
-        href={isBackAction ? '/#projects' : '/projects'}
-        scroll={false}
+      <div
         className={twMerge(
-          'flex w-full items-center gap-1 font-bold',
+          'flex w-full',
           isBackAction ? 'justify-start' : 'justify-end'
         )}
       >
-        {isBackAction ? (
-          <>
-            <MdKeyboardDoubleArrowLeft size={15} />
-            <span className='hover:underline'>Voltar</span>
-          </>
-        ) : (
-          <>
-            <span className='hover:underline'>Ver mais</span>
-            <MdKeyboardDoubleArrowRight size={15} />
-          </>
-        )}
-      </Link>
+        <Link
+          href={isBackAction ? '/#projects' : '/projects'}
+          scroll={false}
+          className={twMerge('flex w-fit items-center gap-1 font-bold')}
+        >
+          {isBackAction ? (
+            <>
+              <MdKeyboardDoubleArrowLeft size={15} />
+              <span className='hover:underline'>Voltar</span>
+            </>
+          ) : (
+            <>
+              <span className='hover:underline'>Ver mais</span>
+              <MdKeyboardDoubleArrowRight size={15} />
+            </>
+          )}
+        </Link>
+      </div>
       <ProjectList repositories={repositories} />
     </>
   );

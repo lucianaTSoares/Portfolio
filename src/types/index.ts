@@ -5,6 +5,7 @@ type TRepository = {
   description: string;
   homepage: string;
   topics: string[];
+  pushed_at: string;
 };
 
 type TResponse = {

@@ -31,10 +31,22 @@ const dmSans = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'LuDev',
-  description:
-    'Olá! Sou a Luciana, desenvolvedora Full Stack focada em trazer as melhores experiências para as pessoas.',
+  title: 'LuDev - Home',
   authors: { name: 'Luciana Soares' },
+  description:
+    'Sou a Luciana, programadora que ama oferecer experiências digitais incríveis às pessoas.',
+  openGraph: {
+    title: 'LuDev',
+    description:
+      'Sou a Luciana, programadora que ama oferecer experiências digitais incríveis às pessoas.',
+    type: 'website',
+    images: ['../../public/preview.png'],
+    siteName: 'LuDev',
+    url: 'https://ludev.tech',
+  },
+  alternates: {
+    canonical: 'https://ludev.tech',
+  },
   keywords: [
     'desenvolvedor',
     'programador',
@@ -47,6 +59,7 @@ export const metadata: Metadata = {
     'frontend',
     'backend',
   ],
+  robots: 'index, follow',
 };
 
 export default function RootLayout({

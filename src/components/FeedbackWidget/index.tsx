@@ -29,7 +29,7 @@ export function FeedbackWidget() {
       ref={divRef}
       className={twMerge(
         'fixed bottom-8 left-8 z-10 md:max-w-[50%] lg:max-w-[50%]',
-        isOpen ? 'w-full lg:w-1/3' : 'w-fit'
+        isOpen ? 'z-[100] w-full lg:w-1/3' : 'w-fit'
       )}
     >
       <div className={twMerge('pr-16', isOpen ? 'block' : 'hidden')}>
