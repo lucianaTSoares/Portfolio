@@ -40,8 +40,9 @@ export const metadata: Metadata = {
     description:
       'Sou a Luciana, programadora que ama oferecer experiências digitais incríveis às pessoas.',
     type: 'website',
-    images: ['../../public/preview.png'],
+    images: ['https://ludev.tech/preview.png'],
     siteName: 'LuDev',
+    url: 'https://ludev.tech',
   },
   alternates: {
     canonical: 'https://ludev.tech',
