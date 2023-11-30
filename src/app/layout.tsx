@@ -42,7 +42,6 @@ export const metadata: Metadata = {
     type: 'website',
     images: ['../../public/preview.png'],
     siteName: 'LuDev',
-    url: 'https://ludev.tech',
   },
   alternates: {
     canonical: 'https://ludev.tech',
@@ -59,7 +58,6 @@ export const metadata: Metadata = {
     'frontend',
     'backend',
   ],
-  robots: 'index, follow',
 };
 
 export default function RootLayout({
