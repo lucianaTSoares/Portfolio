@@ -28,13 +28,13 @@ export function getTabs({ iconSize }: { iconSize: number }) {
     {
       id: 'exp1-tab',
       title: '6place',
-      job: 'Full Stack Developer',
+      job: 'Engenheira de Software Júnior & QA',
       period: 'Mai. 2022 - Atualmente',
       content:
         'Desenvolvi diversas features e correções em APIs REST e WebPages de um marketplace focado em facilitar o' +
         ' abastecimento de franquias alimentícias e Food services. Também fui responsável por escrever documentações de' +
         ' funcionalidades e repositorios, pela implementação de um sistema de notificações multicanal para o marketplace, bem' +
-        ' como a realização e implantação de testes automatizados end-2-end da interface da plataforma.',
+        ' como a realização de testes manuais e testes automatizados e2e da interface da plataforma utilizando BDD.',
       techs: [
         {
           name: 'TypeScript',
@@ -137,7 +137,7 @@ export function getTabs({ iconSize }: { iconSize: number }) {
     {
       id: 'exp2-tab',
       title: 'Generation Brasil',
-      job: 'Web Java/Angular Developer',
+      job: 'Desenvolvedora Web Java/Angular',
       period: 'Jan. 2022 - Mar. 2022',
       content:
         'Trabalhei em squads com diferentes desenvolvedores na construção de Apps em console aplicando' +

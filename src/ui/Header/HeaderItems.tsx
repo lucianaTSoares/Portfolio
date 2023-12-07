@@ -25,7 +25,7 @@ export function HeaderItems({ menuItems }: HeaderItemsProps) {
       {menuItems.map((item) => (
         <li id={`navItem-${item.label}`} key={item.label} onClick={toggle}>
           <a
-            className={`cursor-pointer font-semibold`}
+            className='cursor-pointer font-semibold transition-all hover:text-zinc-400 dark:hover:text-zinc-400'
             href={item.path}
             target='_self'
             rel='noreferrer'
