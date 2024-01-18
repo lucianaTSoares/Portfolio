@@ -27,9 +27,35 @@ export function getTabs({ iconSize }: { iconSize: number }) {
   return [
     {
       id: 'exp1-tab',
+      title: 'F1RST Santander',
+      job: 'IT Analyst II',
+      period: 'Dez. 2023 - Atualmente',
+      content:
+        'Atuando na área de Governança de TI como Analista Pleno Full Stack para soluções que promovem inovação e produtividade aos processos de desenvolvimento de sistemas e equipes do Santander.',
+      techs: [
+        {
+          name: 'Java',
+          icon: (
+            <ToolTip tooltip='Java'>
+              <FaJava size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Spring Boot',
+          icon: (
+            <ToolTip tooltip='Spring Boot'>
+              <SiSpringboot size={iconSize} />
+            </ToolTip>
+          ),
+        },
+      ],
+    },
+    {
+      id: 'exp2-tab',
       title: '6place',
-      job: 'Engenheira de Software Júnior & QA',
-      period: 'Mai. 2022 - Atualmente',
+      job: 'Desenvolvedora Full Stack Jr & QA',
+      period: 'Mai. 2022 - Dez. 2023',
       content:
         'Desenvolvi diversas features e correções em APIs REST e WebPages de um marketplace focado em facilitar o' +
         ' abastecimento de franquias alimentícias e Food services. Também fui responsável por escrever documentações de' +
@@ -135,7 +161,7 @@ export function getTabs({ iconSize }: { iconSize: number }) {
       ],
     },
     {
-      id: 'exp2-tab',
+      id: 'exp3-tab',
       title: 'Generation Brasil',
       job: 'Desenvolvedora Web Java/Angular',
       period: 'Jan. 2022 - Mar. 2022',
