@@ -31,14 +31,14 @@ export function AboutSection() {
               <p className='whitespace-nowrap text-xl !font-bold'>Dez. 2021:</p>
               <p>
                 Formação como tecnóloga em Análise e Desenvolvimento de Sistemas
-                na UNIP
+                na UNIP.
               </p>
             </li>
             <li className='flex items-center gap-5'>
               <p className='w-fit whitespace-nowrap text-xl !font-bold '>
                 Mar. 2022:
               </p>
-              <p>Formação como Desenvolvedora Web na Generation Brasil</p>
+              <p>Formação como Desenvolvedora Web na Generation Brasil.</p>
             </li>
             <li className='flex items-center gap-5'>
               <p className='w-fit whitespace-nowrap text-xl !font-bold '>
@@ -46,13 +46,13 @@ export function AboutSection() {
               </p>
               <p>
                 Adquirindo minha primeira experiência profissional como Dev Full
-                Stack na 6place
+                Stack.
               </p>
             </li>
             <li className='flex items-center gap-5'>
               <p className='whitespace-nowrap text-xl !font-bold'>Set. 2022:</p>
               <p>
-                Minha primeira certificação: AWS Certified Cloud Practitioner
+                Minha primeira certificação: AWS Certified Cloud Practitioner.
               </p>
             </li>
           </ul>

@@ -17,6 +17,11 @@ import {
   SiRobotframework,
   SiSpringboot,
   SiStyledcomponents,
+  SiGitlab,
+  SiApachespark,
+  SiPython,
+  SiDatabricks,
+  SiJunit5,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import { GrMysql } from 'react-icons/gr';
@@ -28,10 +33,10 @@ export function getTabs({ iconSize }: { iconSize: number }) {
     {
       id: 'exp1-tab',
       title: 'F1RST Santander',
-      job: 'IT Analyst II',
+      job: 'Analista Full Stack Pleno',
       period: 'Dez. 2023 - Atualmente',
       content:
-        'Atuando na área de Governança de TI como Analista Pleno Full Stack para soluções que promovem inovação e produtividade aos processos de desenvolvimento de sistemas e equipes do Santander.',
+        'Atuando na área de Governança de TI em soluções que promovem produtividade aos processos de desenvolvimento de softwares e áreas de negócio da F1RST e Santander. Aqui estudo e desenvolvo sistemas low-code e microsserviços aderindo especificações, padrões e cronogramas estabelecidos, realizo a análise e manipulação de dados em cluster utilizando Python, Apache Spark e Databricks, bem como estudos de IA e Prompt Engineering.',
       techs: [
         {
           name: 'Java',
@@ -46,6 +51,54 @@ export function getTabs({ iconSize }: { iconSize: number }) {
           icon: (
             <ToolTip tooltip='Spring Boot'>
               <SiSpringboot size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'JUnit',
+          icon: (
+            <ToolTip tooltip='JUnit'>
+              <SiJunit5 size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Python',
+          icon: (
+            <ToolTip tooltip='Python'>
+              <SiPython size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Apache Spark',
+          icon: (
+            <ToolTip tooltip='Apache Spark'>
+              <SiApachespark size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Databricks',
+          icon: (
+            <ToolTip tooltip='Databricks'>
+              <SiDatabricks size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Git',
+          icon: (
+            <ToolTip tooltip='Git'>
+              <SiGit size={27} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'GitLab',
+          icon: (
+            <ToolTip tooltip='GitLab'>
+              <SiGitlab size={iconSize} />
             </ToolTip>
           ),
         },
