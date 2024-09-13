@@ -35,8 +35,7 @@ export function getTabs({ iconSize }: { iconSize: number }) {
       title: 'F1RST Santander',
       job: 'Analista Full Stack Pleno',
       period: 'Dez. 2023 - Atualmente',
-      content:
-        'Atuando na área de Governança de TI em soluções que promovem produtividade aos processos de desenvolvimento de softwares e áreas de negócio da F1RST e Santander. Aqui estudo e desenvolvo sistemas low-code e microsserviços aderindo especificações, padrões e cronogramas estabelecidos, realizo a análise e manipulação de dados em cluster utilizando Python, Apache Spark e Databricks, bem como estudos de IA e Prompt Engineering.',
+      content:'Atuando em Arquitetura no estudo e adoção de novas ferramentas e tecnologias que promovem produtividade aos processos de desenvolvimento de software e áreas de negócio da F1RST e Santander. Aqui estudo e desenvolvo sistemas low-code, IAs generativas e APIs aderindo especificações, padrões e cronogramas estabelecidos com objetivo de elaborar a definição de arquitetura para uso de Power Platform e suporte à outras áreas.',
       techs: [
         {
           name: 'Java',
