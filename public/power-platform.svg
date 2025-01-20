@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="black" stroke-width="4">
+  <!-- Forma central -->
+  <path d="M100 30 L140 70 L100 110 L60 70 Z" />
+  <!-- Conexão superior -->
+  <path d="M100 30 L100 10 M100 10 L120 30 M100 10 L80 30" />
+  <!-- Conexão inferior -->
+  <path d="M100 110 L100 130 M100 130 L120 110 M100 130 L80 110" />
+  <!-- Forma lateral esquerda -->
+  <path d="M60 70 L30 100 L60 130" />
+  <!-- Forma lateral direita -->
+  <path d="M140 70 L170 100 L140 130" />
+</svg>

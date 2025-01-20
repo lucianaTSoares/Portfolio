@@ -1,41 +1,60 @@
 import { ToolTip } from '@/components/Tooltip';
+import Image from 'next/image';
+import ApacheCamelIcon from 'public/camel.svg';
+import PowerAppsIcon from 'public/power-apps.svg';
+import PowerAutomateIcon from 'public/power-automate.svg';
+import { BiLogoTypescript } from 'react-icons/bi';
+import { FaGithub, FaJava, FaJenkins } from 'react-icons/fa';
+import { GrMysql } from 'react-icons/gr';
+import { RiJavascriptFill } from 'react-icons/ri';
 import {
   SiAngular,
+  SiApachespark,
   SiAzuredevops,
   SiAzurefunctions,
   SiAzurepipelines,
   SiBootstrap,
   SiCss3,
+  SiDatabricks,
   SiGit,
+  SiGithubactions,
+  SiGitlab,
   SiHeroku,
   SiHtml5,
+  SiKubernetes,
+  SiMicrosoftazure,
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
+  SiPython,
   SiReact,
   SiRobotframework,
   SiSpringboot,
   SiStyledcomponents,
-  SiGitlab,
-  SiApachespark,
-  SiPython,
-  SiDatabricks,
-  SiJunit5,
 } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
-import { GrMysql } from 'react-icons/gr';
-import { RiJavascriptFill } from 'react-icons/ri';
-import { BiLogoTypescript } from 'react-icons/bi';
 
-export function getTabs({ iconSize }: { iconSize: number }) {
+interface Tab {
+  id: string;
+  title: string;
+  job: string;
+  period: string;
+  content: string;
+  techs: {
+    name: string;
+    icon: JSX.Element;
+  }[];
+}
+
+export function getTabs({ iconSize }: { iconSize: number }): Tab[] {
   return [
     {
       id: 'exp1-tab',
       title: 'F1RST Santander',
       job: 'Analista Full Stack Pleno',
       period: 'Dez. 2023 - Atualmente',
-      content:'Atuando em Arquitetura no estudo e adoção de novas ferramentas e tecnologias que promovem produtividade aos processos de desenvolvimento de software e áreas de negócio da F1RST e Santander. Aqui estudo e desenvolvo sistemas low-code, IAs generativas e APIs aderindo especificações, padrões e cronogramas estabelecidos com objetivo de elaborar a definição de arquitetura para uso de Power Platform e suporte à outras áreas.',
+      content:
+        'Atuando na área de Arquitetura Técnica no estudo e adoção de novas ferramentas que promovem produtividade às áreas de tecnologia e negócios da F1RST e demais empresas do Grupo Santander. Desenvolvo projetos e contribuo na definição de arquitetura para low-code com Power Platform, integrando soluções desenvolvidas em esteiras de CI/CD com GitHub Actions e usuários de serviço na Azure, além de desenvolver APIs integradas à feramentas de IAs generativas (Azure AI Search e Azure OpenAI), aderindo especificações, padrões organizacionais e cronogramas estabelecidos contribuindo para entrega de resultados na área.',
       techs: [
         {
           name: 'Java',
@@ -54,10 +73,92 @@ export function getTabs({ iconSize }: { iconSize: number }) {
           ),
         },
         {
-          name: 'JUnit',
+          name: 'Apache Camel',
           icon: (
-            <ToolTip tooltip='JUnit'>
-              <SiJunit5 size={iconSize} />
+            <ToolTip tooltip='Apache Camel'>
+              <Image
+                src={ApacheCamelIcon}
+                alt='Apache Camel'
+                width={iconSize}
+                height={iconSize}
+                className='m-0 dark:invert'
+              />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Azure',
+          icon: (
+            <ToolTip tooltip='Azure'>
+              <SiMicrosoftazure size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Kubernetes',
+          icon: (
+            <ToolTip tooltip='Kubernetes'>
+              <SiKubernetes size={27} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'GitLab',
+          icon: (
+            <ToolTip tooltip='GitLab'>
+              <SiGitlab size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Jenkins',
+          icon: (
+            <ToolTip tooltip='Jenkins'>
+              <FaJenkins size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'GitHub',
+          icon: (
+            <ToolTip tooltip='GitHub'>
+              <FaGithub size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'GitHub Actions',
+          icon: (
+            <ToolTip tooltip='GitHub Actions'>
+              <SiGithubactions size={iconSize} />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Power Apps',
+          icon: (
+            <ToolTip tooltip='Power Apps'>
+              <Image
+                src={PowerAppsIcon}
+                alt='Power Apps'
+                width={iconSize}
+                height={iconSize}
+                className='m-0 dark:invert'
+              />
+            </ToolTip>
+          ),
+        },
+        {
+          name: 'Power Automate',
+          icon: (
+            <ToolTip tooltip='Power Automate'>
+              <Image
+                src={PowerAutomateIcon}
+                alt='Power Automate'
+                width={iconSize}
+                height={iconSize}
+                className='m-0 dark:invert'
+              />
             </ToolTip>
           ),
         },
@@ -82,22 +183,6 @@ export function getTabs({ iconSize }: { iconSize: number }) {
           icon: (
             <ToolTip tooltip='Databricks'>
               <SiDatabricks size={iconSize} />
-            </ToolTip>
-          ),
-        },
-        {
-          name: 'Git',
-          icon: (
-            <ToolTip tooltip='Git'>
-              <SiGit size={27} />
-            </ToolTip>
-          ),
-        },
-        {
-          name: 'GitLab',
-          icon: (
-            <ToolTip tooltip='GitLab'>
-              <SiGitlab size={iconSize} />
             </ToolTip>
           ),
         },

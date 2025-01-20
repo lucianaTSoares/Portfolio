@@ -36,6 +36,7 @@
 .logos-slide {
   animation: 35s slide infinite linear;
   display: inline-block;
+  min-width: max-content;
 }
 
 .svg-size {
