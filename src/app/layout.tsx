@@ -23,9 +23,9 @@ const robotoMono = Roboto_Mono({
   display: 'swap',
 });
 
-const dmSans = Poppins({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-dm-sans',
+  variable: '--font-poppins',
   weight: ['400', '500', '700', '800', '900'],
   display: 'swap',
 });
@@ -69,7 +69,7 @@ export default function RootLayout({
   return (
     <html
       lang='pt-br'
-      className={`${montserrat.variable} ${robotoMono.variable} ${dmSans.variable} dark`}
+      className={`${montserrat.variable} ${robotoMono.variable} ${poppins.variable} dark`}
     >
       <AOSInit />
       <body className='prose max-w-none bg-light dark:prose-invert prose-h1:text-3xl prose-h2:mt-0 prose-h2:text-[2rem] prose-h3:m-0 prose-h3:font-bold prose-p:font-normal prose-a:no-underline prose-ul:p-0 prose-li:m-0 prose-li:list-none prose-li:p-0 dark:bg-dark dark:prose-p:font-light sm:prose-h1:text-5xl'>

@@ -1,6 +1,6 @@
 .logo, .logo--variant {
   @apply bg-gradient-to-r from-primary from-15% to-secondary bg-clip-text;
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-poppins);
   -webkit-text-stroke-color: transparent;
 }
 
