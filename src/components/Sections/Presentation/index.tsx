@@ -11,11 +11,15 @@ export function PresentationSection() {
           Oi, sou a Luciana!
           <div
             id='logo'
-            className='logo flex w-fit flex-col justify-center gap-3 font-extrabold italic leading-none text-transparent dark:text-dark sm:flex-wrap md:flex-row'
+            className='logo flex w-fit flex-col justify-center gap-3 py-2 font-extrabold italic leading-none text-transparent dark:text-dark sm:flex-wrap md:flex-row'
           >
-            <span>Desenvolvedora</span>
             <TypewriteCustom
-              texts={['Web.', 'Front-End.', 'Back-End.', 'Full Stack.']}
+              texts={[
+                'Web.',
+                'Full Stack.',
+                'Back-End.',
+                'Arquiteta de Software.',
+              ]}
             />
           </div>
         </h1>

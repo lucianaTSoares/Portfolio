@@ -11,17 +11,19 @@ export function TypewriteCustom({ texts }: TypewriteCustomProps) {
     <Typewriter
       onInit={(typewriter) => {
         typewriter
+          .typeString('Desenvolvedora ')
           .typeString(texts[0])
           .pauseFor(6000)
           .deleteChars(4)
           .typeString(texts[1])
           .pauseFor(6000)
-          .deleteChars(10)
+          .deleteChars(11)
           .typeString(texts[2])
           .pauseFor(6000)
-          .deleteChars(9)
+          .deleteChars(24)
           .typeString(texts[3])
           .pauseFor(6000)
+          .deleteChars(22)
           .start();
       }}
       options={{
